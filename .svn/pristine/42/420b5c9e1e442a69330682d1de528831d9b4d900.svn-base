@@ -1,0 +1,58 @@
+package test.java.com.MusicGroup.scripts.UnifiedTestCases;
+import org.testng.annotations.*;
+
+import test.java.com.MusicGroup.util.DriverTestCase;
+import test.java.com.MusicGroup.pagehelper.Solutions_HomePage_Helper;
+import test.java.com.MusicGroup.util.ExecutionLog;
+
+public class VerifySolutions_HomePage extends DriverTestCase 
+{
+	/*@Test
+	public void VerifySolutions_HomePage throws Exception(){
+		try {
+			// Initialize object
+			Solution_page =new Solutions_HomePage_Helper(driver);
+			ExecutionLog.LogAddClass(this.getClass().getName()+ " and Test method "+ Thread.currentThread().getStackTrace()[1].getMethodName());
+			
+			Solution_page.Solutions_HomePage_Helper();
+			ExecutionLog.Log("Midas Training page verified successfully.");
+		}
+		catch (Error e) 
+		{
+			captureScreenshot("Midas_OurStoryPage2003");
+			ExecutionLog.LogErrorMessage(e);
+			throw e;
+		} 		catch (Exception ex)
+		{
+			captureScreenshot("Midas_OurStoryPage2003");
+			ExecutionLog.LogExceptionMessage(ex);
+			throw ex;
+		}
+	}
+	*/
+	
+	@Test
+	public void test() throws Exception
+	{
+		try {
+			// Initialize object
+			Solution_page =new Solutions_HomePage_Helper(driver);
+			ExecutionLog.LogAddClass(this.getClass().getName()+ " and Test method "+ Thread.currentThread().getStackTrace()[1].getMethodName());
+			
+			Solution_page.VerifySolutionHomePage();
+			ExecutionLog.Log("Midas Training page verified successfully.");
+		}
+		catch (Error e) 
+		{
+			captureScreenshot("Midas_OurStoryPage2003");
+			ExecutionLog.LogErrorMessage(e);
+			throw e;
+		} 	catch (Exception ex)
+		{
+			captureScreenshot("Midas_OurStoryPage2003");
+			ExecutionLog.LogExceptionMessage(ex);
+			throw ex;
+		}
+	}
+
+}

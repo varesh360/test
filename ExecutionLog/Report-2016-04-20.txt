@@ -1,0 +1,353 @@
+
+*****************************************************************************
+Apr 20,2016 10:18:31 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Enterprise_And_Entertainment and Test method EnterpriseEntertainment
+*****************************************************************************
+
+*****************************************************************************
+Apr 20,2016 10:19:49 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.LifeStyle_HomePage and Test method LifeStyleHomePage
+*****************************************************************************
+Apr 20,2016 10:19:56 [info]  Apr 20,2016 10:19:56 [info]  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Error message >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at test.java.com.MusicGroup.pagehelper.LifeStyle_HomePage_Helper.verifyLifeStylePage(LifeStyle_HomePage_Helper.java:367)
+	at test.java.com.MusicGroup.scripts.UnifiedTestCases.LifeStyle_HomePage.LifeStyleHomePage(LifeStyle_HomePage.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+
+*****************************************************************************
+Apr 20,2016 10:25:11 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 10:25:28 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 10:31:54 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 10:32:02 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 10:41:57 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 10:42:06 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 10:47:38 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 10:47:47 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 10:51:01 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 10:51:09 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 10:55:30 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 10:55:41 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 11:02:41 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 11:02:51 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 11:07:36 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 11:07:45 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 11:15:08 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 11:15:15 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 11:20:41 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 11:20:48 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 11:26:50 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 11:27:01 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 12:00:51 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 12:01:02 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 12:08:29 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 12:08:37 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 12:13:05 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryDownload and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 12:13:19 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 12:15:43 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 12:15:50 [info]  Navigated to B2B store successfully.
+Apr 20,2016 12:20:30 [info]  Apr 20,2016 12:20:30 [info]  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Error message >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at test.java.com.MusicGroup.pagehelper.VerifyB2B_OrderHistoryUpdate_Helper.verifyShoppingCartPage(VerifyB2B_OrderHistoryUpdate_Helper.java:266)
+	at test.java.com.MusicGroup.pagehelper.VerifyB2B_OrderHistoryUpdate_Helper.VerifyCheckout(VerifyB2B_OrderHistoryUpdate_Helper.java:604)
+	at test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate.CheckoutPage(VerifyB2B_OrderHistoryUpdate.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+
+*****************************************************************************
+Apr 20,2016 12:20:54 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 12:21:05 [info]  Navigated to B2B store successfully.
+Apr 20,2016 12:25:47 [info]  Apr 20,2016 12:25:47 [info]  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Error message >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at test.java.com.MusicGroup.pagehelper.VerifyB2BAdd_DeleteItemCart_Helper.verifyShoppingCartPage(VerifyB2BAdd_DeleteItemCart_Helper.java:259)
+	at test.java.com.MusicGroup.pagehelper.VerifyB2BAdd_DeleteItemCart_Helper.VerifyCheckout(VerifyB2BAdd_DeleteItemCart_Helper.java:638)
+	at test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart.CheckoutPage(VerifyB2BAdd_DeleteItemCart.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+
+*****************************************************************************
+Apr 20,2016 14:31:16 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 14:31:24 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 14:38:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 14:38:14 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 14:42:25 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryDownload and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 14:42:36 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 14:45:26 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 14:45:34 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 14:51:45 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 14:51:57 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:12:47 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:12:57 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:16:21 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:16:28 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:20:26 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryDownload and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:20:33 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:23:30 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:23:37 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:29:50 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:29:58 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:35:49 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 20,2016 15:35:58 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:38:46 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_DownloadProductList and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:38:56 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:45:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:45:14 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:52:30 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:52:37 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:56:39 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryDownload and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:56:47 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 15:59:28 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 15:59:35 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 16:05:57 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 16:06:04 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 16:12:02 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 20,2016 16:12:11 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 16:15:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_DownloadProductList and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 16:15:14 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 16:17:55 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ChangePassword and Test method B2BChangePassword
+*****************************************************************************
+Apr 20,2016 16:18:03 [info]  Navigated to B2B store successfully.
+Apr 20,2016 16:19:53 [info]  Login into application successfully.
+Apr 20,2016 16:20:17 [info]  Login into application successfully.
+
+*****************************************************************************
+Apr 20,2016 16:20:36 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.Login_B2B and Test method loginB2B
+*****************************************************************************
+Apr 20,2016 16:20:45 [info]  Navigated to B2B store successfully.
+Apr 20,2016 16:23:04 [info]  Login into application successfully.
+
+*****************************************************************************
+Apr 20,2016 16:23:22 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotPasswordPage and Test method B2BStoreAccount
+*****************************************************************************
+Apr 20,2016 16:23:30 [info]  Navigated to B2B store successfully.
+Apr 20,2016 16:23:50 [info]  Login into application successfully.
+
+*****************************************************************************
+Apr 20,2016 17:31:27 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 17:31:36 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 17:38:58 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 17:39:05 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 17:43:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryDownload and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 17:43:12 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 17:46:00 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 17:46:07 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 17:51:58 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 17:52:05 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 17:58:38 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 20,2016 17:58:45 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 18:01:41 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_DownloadProductList and Test method CheckoutPage
+*****************************************************************************
+Apr 20,2016 18:01:51 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 20,2016 18:04:35 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ChangePassword and Test method B2BChangePassword
+*****************************************************************************
+Apr 20,2016 18:04:43 [info]  Navigated to B2B store successfully.
+Apr 20,2016 18:07:04 [info]  Login into application successfully.
+Apr 20,2016 18:07:25 [info]  Login into application successfully.
+
+*****************************************************************************
+Apr 20,2016 18:07:48 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.Login_B2B and Test method loginB2B
+*****************************************************************************
+Apr 20,2016 18:07:55 [info]  Navigated to B2B store successfully.
+Apr 20,2016 18:10:14 [info]  Login into application successfully.
+
+*****************************************************************************
+Apr 20,2016 18:10:35 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotPasswordPage and Test method B2BStoreAccount
+*****************************************************************************
+Apr 20,2016 18:10:42 [info]  Navigated to B2B store successfully.
+Apr 20,2016 18:10:59 [info]  Login into application successfully.

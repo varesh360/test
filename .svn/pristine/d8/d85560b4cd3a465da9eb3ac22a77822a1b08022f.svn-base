@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="Midas_TrainingPage"
+	annotations="JDK">
+	<test name="MidasTraining_OnlineTutorial" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MidasTraining_OnlineTutorial" />
+		</classes>		
+	</test>
+</suite> 

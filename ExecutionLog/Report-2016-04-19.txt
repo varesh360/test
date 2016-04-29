@@ -1,0 +1,75 @@
+
+*****************************************************************************
+Apr 19,2016 11:15:42 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 19,2016 11:15:50 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 19,2016 11:17:23 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 19,2016 11:17:30 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 19,2016 11:34:41 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 19,2016 11:34:52 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 19,2016 12:11:21 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 19,2016 12:11:31 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 19,2016 12:27:19 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970 and Test method verifyMidas_OurStory1970Page
+*****************************************************************************
+Apr 19,2016 12:27:47 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:28:11 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974 and Test method verifyMidas_OurStory1974Page
+*****************************************************************************
+Apr 19,2016 12:28:39 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:29:00 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986 and Test method verifyMidas_OurStory1986Page
+*****************************************************************************
+Apr 19,2016 12:29:46 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:30:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987 and Test method verifyMidas_OurStory1987Page
+*****************************************************************************
+Apr 19,2016 12:30:32 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:30:50 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990 and Test method verifyMidas_OurStory1990Page
+*****************************************************************************
+Apr 19,2016 12:31:13 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:31:35 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995 and Test method verifyMidas_OurStory1990Page
+*****************************************************************************
+Apr 19,2016 12:32:18 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:32:42 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996 and Test method verifyMidas_OurStory1996Page
+*****************************************************************************
+Apr 19,2016 12:33:11 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:33:30 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998 and Test method verifyMidas_OurStory1998Page
+*****************************************************************************
+Apr 19,2016 12:33:53 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:34:15 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002 and Test method verifyMidas_OurStory2002Page
+*****************************************************************************
+Apr 19,2016 12:34:37 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:34:59 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003 and Test method verifyMidas_OurStory2003Page
+*****************************************************************************
+Apr 19,2016 12:35:25 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 19,2016 12:35:44 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004 and Test method verifyMidas_OurStory2004Page
+*****************************************************************************
+Apr 19,2016 12:36:40 [info]  Midas Training page verified successfully.

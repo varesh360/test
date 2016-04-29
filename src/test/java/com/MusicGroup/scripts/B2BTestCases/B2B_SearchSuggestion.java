@@ -1,0 +1,83 @@
+/*==============================================================================================================================
+ File Name    : B2B_SearchSuggestion.java
+ ClassName    : B2B_SearchSuggestion
+ Summary      : Contains automation scripts to login into B2B_SearchSuggestion store.
+ ===============================================================================================================================
+ History      :   Company            Created By     
+                  360logica                         
+
+ ===============================================================================================================================
+ Remarks      :   Tests - 
+ ===============================================================================================================================*/
+package test.java.com.MusicGroup.scripts.B2BTestCases;
+
+import org.testng.annotations.Test;
+
+import test.java.com.MusicGroup.pagehelper.B2B_Login_Helper;
+import test.java.com.MusicGroup.pagehelper.B2B_SearchSuggestion_Helper;
+import test.java.com.MusicGroup.util.DriverTestCase;
+import test.java.com.MusicGroup.util.ExecutionLog;
+import test.java.com.MusicGroup.util.PropertyReader;
+import test.java.com.MusicGroup.util.DriverTestCase.LoginWindow;
+
+public class B2B_SearchSuggestion extends DriverTestCase
+{
+	@Test
+	public void SearchSuggestionB2B() throws Exception
+	{
+		try{
+			//Initialize object
+			b2B_Login_Helper = new B2B_Login_Helper(driver);
+			b2b_SearchSuggestion_Helper = new B2B_SearchSuggestion_Helper(driver);
+			propertyReader = new PropertyReader();
+			ExecutionLog.LogAddClass(this.getClass().getName() + " and Test method " +Thread.currentThread().getStackTrace()[1].getMethodName());		
+			
+			//Declare variables
+			String B2BStore_URL = propertyReader.readApplicationFile("B2BStore_URL");
+			String B2BUser = propertyReader.readApplicationFile("B2BUserAllProd");
+			String password = propertyReader.readApplicationFile("B2BPassword");
+			
+			//Navigate to B2B Store url
+			
+
+			//B2B_ChangePassword s = new B2B_ChangePassword();
+		//	new Thread(s.new LoginWindow()).start();
+			driver.navigate().to(B2BStore_URL);
+			ExecutionLog.Log("Navigated to B2B store successfully.");
+			
+            //Verify Login page after successful login
+			
+			b2B_Login_Helper.b2BuserLogin(B2BUser, password);
+			ExecutionLog.Log("Login into application successfully.");
+			
+			Thread.sleep(10000);
+				
+				
+			//Verify ProductReview page after successful login
+			String TextSpace4Height= propertyReader.readApplicationFile("TextSpace4Height_B2BSearchSuggestion");
+			String vSpace18Height= propertyReader.readApplicationFile("vSpace18Height_B2BSearchSuggestion");
+			String TextSpace10Height= propertyReader.readApplicationFile("TextSpace10Height_B2BSearchSuggestion");
+			String Gutter17Width= propertyReader.readApplicationFile("Gutter17Width_B2BSearchSuggestion");
+			String vSpace17Height= propertyReader.readApplicationFile("vSpace17Height_B2BSearchSuggestion");
+			String SelectFieldWidth55Width= propertyReader.readApplicationFile("SelectFieldWidth55Width_B2BSearchSuggestion");
+			String SelectfieldWidth55Height= propertyReader.readApplicationFile("SelectfieldWidth55Height_B2BSearchSuggestion");
+			String TextSpace15Height= propertyReader.readApplicationFile("TextSpace15Height_B2BSearchSuggestion");
+			
+			b2b_SearchSuggestion_Helper.verifySearchSuggestion(TextSpace4Height, vSpace18Height, TextSpace10Height, Gutter17Width, vSpace17Height,SelectFieldWidth55Width, SelectfieldWidth55Height, TextSpace15Height);
+			
+			ExecutionLog.Log("Login into application successfully.");
+		}  
+		catch(Error e) 
+		{
+			captureScreenshot("B2B_SearchSuggestion");	
+			ExecutionLog.LogErrorMessage(e);
+			throw e;
+		}
+		catch(Exception ex) 
+		{
+			captureScreenshot("B2B_SearchSuggestion");	
+			ExecutionLog.LogExceptionMessage(ex);	
+			throw ex;
+		}
+	}
+}

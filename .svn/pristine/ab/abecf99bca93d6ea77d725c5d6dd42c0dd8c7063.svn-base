@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="SHMEP"
+	annotations="JDK">
+	<test name="SHMEP" junit="false"
+		preserve-order="true">
+		<classes>
+				<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_Home" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_238" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_319" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_320" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_321" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_322" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_323" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_324" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_325" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_326" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_327" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_328" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_331" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMCP_2054" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Enterprise_And_Entertainment" />
+		</classes>		
+	</test>
+</suite> 

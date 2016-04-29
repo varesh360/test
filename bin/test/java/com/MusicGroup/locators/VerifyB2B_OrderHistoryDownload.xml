@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locators>
+   <LoginPage>
+   <VerifyLogoOnLogin><![CDATA[//div[@class='yCmsComponent siteLogo']/a[@class='logo-holder']/img[@src='//assets.music-group.com/images/logo/TypeA/MUSICGROUP.png']]]></VerifyLogoOnLogin>
+   <VerifySignInHeading><![CDATA[//h2[contains(text(),'MUSIC ID Sign In')]]]></VerifySignInHeading>
+   <VerifyMusicGroupID><![CDATA[//div[@class='control-group']/div[@class='form_field-input']/input[@id='j_username']]]></VerifyMusicGroupID>
+   <VerifyMusicGroupPassword><![CDATA[//div[@class='control-group']/div[@class='form_field-input']/input[@id='j_password']]]></VerifyMusicGroupPassword>
+   <VerifyLogInButton><![CDATA[//span[@class='pull-right']/button[contains(text(), 'Sign In')]]]></VerifyLogInButton>
+   </LoginPage>
+   
+   <StoreHomePage>
+   <VerifyLogoLogin><![CDATA[//div[@class='yCmsComponent siteLogo']//a[@class='logo-holder']/img[@src='//assets.music-group.com/images/logo/TypeA/MUSICGROUP.png']]]></VerifyLogoLogin>
+   <VerifyLoggedUser><![CDATA[//div[@class='headerContent ']/ul/li[contains(text(), 'Welcome, MG_PARTNER')]]]></VerifyLoggedUser>
+   <ClickOnOrder><![CDATA[//li/a[contains(text(), 'Orders')]]]></ClickOnOrder>
+   <ClickOnDownloadMenu><![CDATA[//i[@class='icon icon-download']]]></ClickOnDownloadMenu>
+   </StoreHomePage>
+</Locators>

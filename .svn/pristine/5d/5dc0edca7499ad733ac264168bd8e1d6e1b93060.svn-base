@@ -1,0 +1,62 @@
+package test.java.com.MusicGroup.scripts.UnifiedTestCases;
+
+
+
+
+
+
+
+
+
+import org.testng.annotations.Test;
+
+import test.java.com.MusicGroup.util.DriverTestCase;
+import test.java.com.MusicGroup.util.ExecutionLog;
+import test.java.com.MusicGroup.pagehelper.VerifyBrokenImage_Helper;
+
+public class VerifyImageOnProductPage extends DriverTestCase
+{
+	                                                                                                                                                                                                                                                                              
+	@Test
+	public void VerifyProductOverviewPage() throws Exception
+	{
+	
+		
+		
+		try{
+			//Initialize object
+			Image_Overview_Helper_1 = new VerifyBrokenImage_Helper(driver);
+			
+			ExecutionLog.LogAddClass(this.getClass().getName() + " and Test method " +Thread.currentThread().getStackTrace()[1].getMethodName());
+			
+			//Declare variables
+			String ImageStatus = propertyReader.readApplicationFile("Image_Status");
+			String MAINURL = propertyReader.readApplicationFile("MAINURL");
+			String Root_Path = System.getProperty("user.dir");
+			//driver.navigate().to(MAINURL);
+			Image_Overview_Helper_1.ReadExcelFile(Root_Path,"Image.xls", "Test",ImageStatus);
+			ExecutionLog.Log("Navigated to Production URL successfully.");
+			//Verify Product Overview page
+			
+			//Image_Overview_Helper_1.verifyOverviewPage(ImageStatus);
+			
+			ExecutionLog.Log("Product Overview page verified successfully.");
+		}  
+		catch(Error e) 
+		{
+			captureScreenshot("TC_002_Product_Overview_Page");	
+			ExecutionLog.LogErrorMessage(e);
+			throw e;
+
+		}
+		catch(Exception ex) 
+		{
+			captureScreenshot("TC_002_Product_Overview_Page");	
+			ExecutionLog.LogExceptionMessage(ex);	
+			throw ex;
+		}
+		
+		
+		
+		}
+	}

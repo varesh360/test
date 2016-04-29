@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="Creating_Home"
+	annotations="JDK">
+	<test name="Creating_Home" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Creation_HomePage" />
+		</classes>		
+	</test>
+</suite> 

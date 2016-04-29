@@ -1,0 +1,10 @@
+
+*****************************************************************************
+Apr 01,2016 12:27:02 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.JoinUS_HowWeLive and Test method VerifyHowWeLive
+*****************************************************************************
+Apr 01,2016 12:27:49 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+Apr 01,2016 12:28:19 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.JoinUS_WhatWeDo and Test method VerifyWhatWeDo
+*****************************************************************************
+Apr 01,2016 12:29:37 [info]  Midas Training page verified successfully.

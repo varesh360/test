@@ -1,0 +1,345 @@
+package test.java.com.MusicGroup.pagehelper;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+
+import com.atlassian.jira.rpc.soap.client.RemoteFieldValue;
+
+import java.io.FileNotFoundException;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+import org.testng.Reporter;
+
+import com.atlassian.jira.rpc.soap.client.RemoteComment;
+import com.atlassian.jira.rpc.soap.*;
+import com.atlassian.jira.rpc.soap.service.*;
+
+import javax.naming.spi.ObjectFactory;
+
+
+
+//import com.atlassian.jira.rpc.soap.beans.RemoteComponent;
+import com.atlassian.jira.rpc.soap.client.RemoteFieldValue;
+import com.atlassian.jira.rpc.soap.beans.RemoteFilter;
+
+//import com.dolby.jira.net.soap.jira.RemoteFilter;
+import com.gargoylesoftware.htmlunit.javascript.host.URL;
+//import com.dolby.jira.net.soap.jira.JiraSoapServiceServiceLocator;
+//import com.dolby.jira.net.soap.jira.JiraSoapService;
+import com.dolby.jira.net.soap.jira.RemoteProject;
+import com.atlassian.jira.rpc.soap.client.RemoteIssue;
+import com.dolby.jira.net.soap.jira.RemoteServerInfo;
+
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+
+//import com.dolby.jira.net.soap.jira.RemoteAuthenticationException;
+
+import org.openqa.selenium.WebElement;
+import org.rhq.core.domain.configuration.Configuration;
+
+import com.atlassian.jira.rpc.soap.*;
+import com.atlassian.jira.rpc.soap.client.JiraSoapServiceServiceLocator;
+import com.atlassian.jira.rpc.soap.client.JiraSoapService;
+import com.atlassian.jira.rpc.soap.client.RemoteAuthenticationException;
+import com.atlassian.jira.rpc.soap.client.RemoteComponent;
+import com.atlassian.jira.rpc.soap.client.RemotePermissionException;
+import com.atlassian.jira.rpc.soap.client.RemoteValidationException;
+import com.atlassian.jira.rpc.soap.client.RemoteVersion;
+
+import org.openqa.selenium.JavascriptExecutor;
+public class VerifyBrokenImage_Helper extends DriverHelper  
+{
+	private LocatorReader locatorReader;	
+	private JiraSoapServiceServiceLocator l;
+	public static final String WS_ENDPOINT = "/rpc/soap/jirasoapservice-v2";
+
+    private String user="surya.kant";
+    private String password="360Logica8932";
+    private String url="https://jira.music-group.com/";
+    private String id="2106";
+    private String token;
+    private JiraSoapService jiraAccess;
+    static final String PROJECT_KEY = "SHMEP";
+   
+	static final String ISSUE_TYPE = "1";
+	static final String PRIORITY_ID = "2";
+	//static final String COMPONENT_ID = "10240";
+    
+    private Map<String, RemoteProject> projectMap = new HashMap<String, RemoteProject>();
+    private Map<String, List<RemoteFilter>> filters = new HashMap<String, List<RemoteFilter>>();
+	private String Author="dushyant.sharma@360logica.com";
+//	private String jiraIssueAssignee = "dushyant.sharma@360logica.com";
+	private String jiraIssueAssignee = "Dushyant Sharma";  
+	private String jiraAssignee="assignee";
+	private String sData=null;
+	public int count = 0;
+	public String getURL;
+	public String getData;
+	public String GetModelName;
+	public String GetPageType;
+
+	public VerifyBrokenImage_Helper(WebDriver driver)
+	{
+		super(driver);
+		locatorReader = new LocatorReader("VerifyImageOnProductPage.xml");
+	}
+
+		public void writeExcel(String filePath,String fileName,String sheetName,String dataToWrite) throws IOException{
+			//Create a object of File class to open xlsx file
+			XSSFWorkbook workbook = new XSSFWorkbook();
+			XSSFSheet sheet = workbook.createSheet(sheetName);
+			//Create a new row in current sheet
+			Row row = sheet.createRow(0);
+			//Create a new cell in current row
+			Cell cell = row.createCell(0);
+			//Set value to new value
+			cell.setCellValue(dataToWrite);
+			FileOutputStream out = new FileOutputStream(new File(filePath+"/"+fileName));
+			workbook.write(out);
+			out.close();
+  			}
+		public void ReadExcelFile(String filePath,String fileName,String sheetName, String ImageStatus) throws IOException{
+				
+				
+			String IssueID=this.CreateJiraTicket();
+			System.out.println("RemoteIssue"+IssueID);
+			FileInputStream file = new FileInputStream(new File(filePath+"/"+fileName));
+			 //Get the workbook instance for XLS file 
+				XSSFWorkbook workbook1 = new XSSFWorkbook(file);
+			    XSSFSheet sheet = workbook1.getSheetAt(0);
+			    int LastRowOFSheet=sheet.getLastRowNum();
+			 
+			    System.out.println("RowNumber"+LastRowOFSheet);
+			    int rowcount=sheet.getLastRowNum()-sheet.getFirstRowNum();
+			    for(int i=0;i<=rowcount+1;i++){
+			    	//System.out.println("Value of Row is"+i);
+			    	Row row=sheet.getRow(i);
+			   	 String getURL=row.getCell(0).getStringCellValue();
+			   	
+			   	String GetModelName=row.getCell(1).getStringCellValue();
+			   	String GetPageType=row.getCell(2).getStringCellValue();
+			    	 int LastCols=row.getLastCellNum();
+			    	 for(int j=3;j<LastCols;j++){
+			    		 
+			    	
+			    		 String getData=row.getCell(j).getStringCellValue();
+			    
+			    	 
+			    	 System.out.println(getData + "\t\t"+"||");
+			    	 System.out.println();
+			    	 
+					 this.verifyOverviewPage(ImageStatus,getURL,getData,GetModelName, GetPageType, IssueID);
+			    }
+			    	
+			    }
+		
+			
+			}
+		
+	public String getToken(){
+			if (token == null) {
+			       try {
+			    	   System.out.println("URl is"+url);
+			    	   System.out.println("GetToken Successfully");
+			       JiraSoapServiceServiceLocator l = new JiraSoapServiceServiceLocator();
+			      System.out.println("L is");
+			       l.setJirasoapserviceV2EndpointAddress(url + WS_ENDPOINT);
+			    //   jiraAccess = l.getJirasoapserviceV2();
+			       jiraAccess=l.getJirasoapserviceV2();
+			    
+			       System.out.println("URl is"+url);
+			       token =jiraAccess.login(user, password);
+		
+			
+			     } catch (RemoteAuthenticationException  e) {
+			    	 System.err.println("ERROR: Unable to connect to the Jira server!");
+			       e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+			 }
+			 catch (RemoteException e) {
+			    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+			} //catch (java.rmi.RemoteException e) {
+			    //e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+			//}
+			catch (javax.xml.rpc.ServiceException e) {
+			  e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+			   }
+			  }
+			  return token;
+		 }
+	
+	
+		
+	public void SetJiraId(String id){
+    	getToken();
+    	String IssueID=new String(id);
+    	System.out.println("JirsTestID:="+IssueID);
+    	//Reporter.log("<a href=\"https://jira.music-group.com/secure/CreateIssue!default.jspa\">Open New Jira Issue Here</a>");
+    	 Reporter.log("<a href=\"https://jira.music-group.com/browse/"+IssueID+"\">\""+IssueID+" \"</a>");
+    	
+    }
+	public boolean updateJiraComment(String IssueID,String getURL,String GetPageType,String GetModelName){
+    	//this.getToken();
+    	this.SetJiraId(IssueID);
+    	RemoteComment rc = new RemoteComment();
+    	RemoteFilter rm=new RemoteFilter();
+    	RemoteIssue issue = new RemoteIssue();
+         if (null!= rc){
+        	 System.out.println("RC is"+rc);
+        	 rc.setAuthor(Author);
+        	 rc.setBody("URL: "+getURL+"\n   \n Missing Image for product "+GetModelName+" "+GetPageType);
+        	 issue.setAssignee(this.jiraIssueAssignee);
+        	 System.out.println("Assignee"+issue);
+        	 System.out.println("Author is"+Author);
+        	 
+     		
+     		  if (this.jiraAccess != null){
+     			  try{
+     				  if (null == getToken()){
+     					  System.err.println("addJiraCommentToIssue: Jira not authenticated? token is Null");
+     					   return false;
+     					  
+     				  }
+     				  String token1=getToken();
+     				  System.out.println("Token is"+token1);
+     			this.jiraAccess.addComment(token1, IssueID,rc);
+     				  System.out.println("addJiraCommentToIssue: Completed adding Comment to: " + IssueID);
+     			  }
+     			  catch (Exception e) {
+     				  System.err.println("RemotePermissionException: Failed adding Comment to: " + IssueID);
+     				  return false;
+     			  }
+     			
+     			 
+    
+    }
+         }
+         return true;
+    
+	}
+	
+	public String CreateJiraTicket()throws RemotePermissionException,
+	RemoteValidationException, RemoteAuthenticationException, com.atlassian.jira.rpc.soap.client.RemoteException, RemoteException{
+    	getToken();
+    
+    	//this.SetJiraId(jiraTestID);
+    	//RemoteIssue issue = createIssue(jiraAccess, Token2);
+    	RemoteComment rc = new RemoteComment();
+    	RemoteFilter rm=new RemoteFilter();
+    	RemoteIssue issue = new RemoteIssue();
+   
+    	issue.setProject(PROJECT_KEY);
+		issue.setType(ISSUE_TYPE);
+		
+		issue.setAssignee("Dushyant.Sharma");
+		issue.setSummary("Pre-Production Missing Content ");
+		issue.setDescription("Pre-Production Missing Content");
+	
+		issue.setPriority(PRIORITY_ID);
+		RemoteComponent component = new RemoteComponent();
+		//component.setId(COMPONENT_ID);
+		RemoteIssue createdIssue = jiraAccess.createIssue(getToken(), issue);
+		System.out.println("\tSuccessfully created issue " + createdIssue.getKey());
+		String Issue=createdIssue.getKey();
+		return Issue;
+	}
+	
+	//Verify Product Overview page
+	public void verifyOverviewPage(String ImageStatus, String getURL, String getData, String GetModelName, String GetPageType, String IssueID) throws IOException
+	{
+		 try{
+			 
+		 
+		//Reach upto Product Overview page(Bugera)
+		//ReachUptoOverviewPage();
+		int count = 0;
+		 
+		 driver.navigate().to(getURL);
+		 System.out.println("URL is for Navigation"+getURL);
+		 
+		//Verify Image1
+		try{
+			
+			
+			boolean ActualImageStatus=this.imageVerify(getData);
+			System.out.println("Actual Image Status"+ActualImageStatus);
+			String ActualStatus=Boolean.toString(ActualImageStatus);
+			if(ActualStatus=="false"){
+				updateJiraComment(IssueID, getURL,GetPageType,GetModelName);
+				
+			}
+			
+		}
+		catch (Exception ex)  {
+			String dataToWrite="1 Image is not Displayed on Product Page Test11";
+			System.out.println("Image is not Displayed on Product Page Test1111");
+			//this.writeExcel("E:/Test","TestResult1.xls", "Test", dataToWrite);
+			count = count + 1;
+		} catch (Error ex) {
+			String dataToWrite="1 Image is not Displayed on Product Page";
+			//this.writeExcel("E:/Test", "TestResult1.xls", "Test", dataToWrite);
+			System.out.println("Image is not displayed IMage1122");
+			count = count + 1;
+		}
+		 }
+				 catch (Exception ex){
+			 System.out.println("URL is not Navigate on Product Page");
+		 }
+		
+	}
+	
+	
+
+	//Reach upto Product Overview page(Bugera)
+public boolean imageVerify(String getData){
+	boolean result=false;
+	try {
+		
+		//By by;
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollByLines(285)");
+		System.out.println("Locator is "+getData);
+		 WebElement Result1=driver.findElement(By.xpath("//img[contains(@src, '"+getData+"' )]"));
+		 System.out.println("GEtData"+Result1);
+		 result=true;
+	}
+	catch (Exception ex)  {
+		String dataToWrite="1 Image is not Displayed on Product Page";
+		System.out.println("Image is not Displayed on Product Page");
+		//this.writeExcel("E:/Test","TestResult1.xls", "Test", dataToWrite);
+		count = count + 1;
+	} catch (Error ex) {
+		String dataToWrite="1 Image is not Displayed on Product Page";
+		//this.writeExcel("E:/Test", "TestResult1.xls", "Test", dataToWrite);
+		
+		count = count + 1;
+	}
+	return result;
+}
+	
+		}
+		
+		
+
+		

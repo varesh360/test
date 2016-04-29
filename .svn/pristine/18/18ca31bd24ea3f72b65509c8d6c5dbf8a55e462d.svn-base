@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="CrossTest2"
+	annotations="JDK">
+	<test name="CrossTest2" junit="false"
+		preserve-order="true">
+		<classes>
+		
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2006" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2008" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2009" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2011" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2014" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.Login_B2B" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_PlaceOrder_SingleProduct" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotPasswordPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ProductDetailPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SearchResultPage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Product_Feature_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Product_Overview_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Download_Center" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Enterprise_And_Entertainment" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_328" />
+		</classes>		
+	</test>
+</suite> 

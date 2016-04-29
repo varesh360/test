@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="BuyNow_StoreLocation"
+	annotations="JDK">
+	<test name="BuyNow_StoreLocation" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.BuyNow_StoreLocation" />
+		</classes>		
+	</test>
+</suite> 

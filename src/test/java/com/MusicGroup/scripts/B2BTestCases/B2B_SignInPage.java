@@ -1,0 +1,72 @@
+package test.java.com.MusicGroup.scripts.B2BTestCases;
+
+import org.testng.annotations.Test;
+
+import test.java.com.MusicGroup.pagehelper.B2B_SignInPage_Helper;
+import test.java.com.MusicGroup.pagehelper.B2B_Login_Helper;
+import test.java.com.MusicGroup.util.DriverTestCase;
+import test.java.com.MusicGroup.util.ExecutionLog;
+import test.java.com.MusicGroup.util.PropertyReader;
+import test.java.com.MusicGroup.util.DriverTestCase.LoginWindow;
+
+public class B2B_SignInPage extends DriverTestCase
+{
+	@Test
+	public void B2BStoreAccount() throws Exception
+	{
+		try{
+			//Initialize object
+			b2B_Login_Helper = new B2B_Login_Helper(driver);
+			b2b_SignInPage_Helper = new B2B_SignInPage_Helper(driver);
+			propertyReader = new PropertyReader();
+			ExecutionLog.LogAddClass(this.getClass().getName() + " and Test method " +Thread.currentThread().getStackTrace()[1].getMethodName());		
+			
+			//Declare variables
+			String B2BStore_URL = propertyReader.readApplicationFile("B2BStore_URL");
+			//String B2BUser = propertyReader.readApplicationFile("B2BUserAllProd");
+		//	String password = propertyReader.readApplicationFile("B2BPassword");
+			
+			//Navigate to B2B Store url
+			
+
+		//	B2B_ChangePassword s = new B2B_ChangePassword();
+			//new Thread(s.new LoginWindow()).start();
+			driver.navigate().to(B2BStore_URL);
+			ExecutionLog.Log("Navigated to B2B store successfully.");
+			
+            //Verify Login page after successful login
+			
+			//b2B_Login_Helper.b2BuserLogin(B2BUser, password);
+			//ExecutionLog.Log("Login into application successfully.");
+			
+			Thread.sleep(10000);
+				
+				
+			//Verify ProductReview page after successful login
+			String vSpace1Height= propertyReader.readApplicationFile("vSpace1Height_SignInPage");
+			String TextSpace1Height= propertyReader.readApplicationFile("TextSpace1Height_SignInPage");
+			String TextSpace3Height= propertyReader.readApplicationFile("TextSpace3Height_SignInPage");
+			String Gutter16Width= propertyReader.readApplicationFile("Gutter16Width_SignInPage");
+			String Width= propertyReader.readApplicationFile("Width_SignInPage");
+			String Gutter2Width= propertyReader.readApplicationFile("Gutter2Width_SignInPage");
+			String textSpace10Height= propertyReader.readApplicationFile("TextSpace10Height_SignInPage");
+			String gap17width= propertyReader.readApplicationFile("Gap17Width_SignInPage");
+			
+			b2b_SignInPage_Helper.verifyForgotMusicID(vSpace1Height,TextSpace1Height,TextSpace3Height,Gutter16Width,Width,Gutter2Width,textSpace10Height,gap17width);
+			
+			ExecutionLog.Log("Login into application successfully.");
+		}  
+		catch(Error e) 
+		{
+			captureScreenshot("B2B_SignInPage");	
+			ExecutionLog.LogErrorMessage(e);
+			throw e;
+		}
+		catch(Exception ex) 
+		{
+			captureScreenshot("B2B_SignInPage");	
+			ExecutionLog.LogExceptionMessage(ex);	
+			throw ex;
+		}
+	}
+}

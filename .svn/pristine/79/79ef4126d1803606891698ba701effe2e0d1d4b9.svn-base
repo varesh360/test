@@ -1,0 +1,927 @@
+/*==============================================================================================================================
+ File Name    : Product_Overview_Helper.java
+ ClassName    : Product_Overview_Helper
+ Summary      : Contains helping methods for Product Overview Page.
+ ===============================================================================================================================
+ History      :   Company            Created By     
+                  360logica                         
+
+ ===============================================================================================================================
+ Remarks      :   Tests - 
+ ===============================================================================================================================*/
+
+package test.java.com.MusicGroup.pagehelper;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+public class Product_Overview_Helper extends DriverHelper
+{
+	private LocatorReader locatorReader;	
+
+	public Product_Overview_Helper(WebDriver driver)
+	{
+		super(driver);
+		locatorReader = new LocatorReader("Product_Overview.xml");
+	}
+	
+	//Click on Menu icon 
+	public void clickMenuIcon()
+	{
+		String locator = locatorReader.getLocator("ProductOverViewPage.MenuIcon");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	
+	//Click on Behringer Brand 
+	public void clickonBehringerBrand()
+	{
+		String locator = locatorReader.getLocator("ProductOverViewPage.ClickBrandbehringer");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	
+	//Click  Computer Audio 
+	public void ClickComputerAudio()
+	{
+		String locator = locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	//Click Audio Interface
+	public void ClickAudioInterface()
+	{
+		String locator = locatorReader.getLocator("ProductOverViewPage.ClickAudioInterface");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	
+	//Click on product Link
+	public void clickonProductLink()
+	{
+		String locator = locatorReader.getLocator("ProductOverViewPage.ClickProductLink");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	
+	//Click on Product UMC202HD
+	public void ClickProductUMC202HD()
+	{
+		String locator = locatorReader.getLocator("ProductOverViewPage.ClickProductUMC202HD");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	//Check Page not found
+	public void checkPageNotFound()
+	{
+		String actualTitle1 = driver.getTitle();
+		System.out.println("Get Titile"+ actualTitle1);
+		String expectedTitle1 = "Not Found | MUSIC Group";
+		Assert.assertFalse(actualTitle1==expectedTitle1);
+
+		
+	}
+	
+	//Reach upto Product Overview page(Bugera)
+	public void ReachUptoOverviewPage()
+	{
+		//Click on the Menu icon
+		this.clickMenuIcon();
+		//Click on a brand Behringer
+		this.clickonBehringerBrand();
+		//Click on Product  link
+		this.clickonProductLink();
+		this.WaitForElementPresent(locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio")));	
+		//Click on /Computer-Audio
+		this.ClickComputerAudio();
+		//Click on /Audio-Interfaces
+		this.ClickAudioInterface();
+		//Click on /UMC202HD
+		this.ClickProductUMC202HD();
+		
+		//Check page not found
+		this.checkPageNotFound();	
+	}
+	
+	//Verify Product Overview page
+	public void verifyOverviewPage(String VSpace1height, String ParaSpace1_height, String vTextSpace7,String vGutter2Width, String CallOutBodyWidth,String vTextSpace10,String vHeadLead8, String BodycopyLed_height, String Paraspace2_height, String HSeparator_width, String HSeparator_height, String CallBodyCopHeight, String CallBodyCopwidth, String CallBox_imgheight, String CallBox_imgwidth, String HeadlineLead_height, String vSpace6Height)
+	{
+		//Reach upto Product Overview page(Bugera)
+		ReachUptoOverviewPage();
+		int count = 0;
+		//<<<.....................................Verify header part..............................................>>>>>// 
+		/*
+		//Verify product logo is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.ProductLogo"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.ProductLogo")));
+		//Verify support link is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.SupportLink"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.SupportLink")));
+		//Verify product search field is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.SearchField"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.SearchField")));
+		//Verify Feature link is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.FeaturesLink"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.FeaturesLink")));
+		//Verify Reviews link is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.ReviewsLink"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.ReviewsLink")));
+		//Verify Discover link is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.DiscoverLink"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.DiscoverLink")));
+		//Verify Downloads link is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.DownloadsLink"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.DownloadsLink")));
+		//Verify Buy Now link is available
+		this.WaitForElementPresent(locatorReader.getLocator("ProductFeaturePage.BuyNow"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductFeaturePage.BuyNow")));
+		*/
+		//<<<.....................................Verify Pixel part..............................................>>>>>//		
+
+		//Verify vSpace1 in header has the height of 70px
+		try {
+			
+			String locator = locatorReader.getLocator("VerifyPixel.VSpace1height");
+			String margin_top = this.getCSS(locator, "padding-top");
+			String locator1 = locatorReader.getLocator("VerifyPixel.vSpace1HeightHeading");
+			String font_size = this.getCSS(locator1, "font-size");
+			String line_height = this.getCSS(locator1, "line-height");
+
+			// Substring: To remove pixel(px text) from value
+			String margin_top_wopx = margin_top.substring(0, 2);
+			String line_height_wopx = line_height.substring(0, 3);
+			String font_size_wopx = font_size.substring(0, 2);
+	
+			int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx)-Integer.parseInt("19")+Integer.parseInt("8");
+		
+			int Totaladdedpixel = Integer.parseInt(margin_top_wopx)+ getsubpixel;
+			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+			System.out.println("Actual result" + Totalpixelvaluewithpixel);
+		Assert.assertEquals(VSpace1height, Totalpixelvaluewithpixel);
+		}
+
+		catch (Exception ex) {
+			System.out.println("Product Overview vSpace1Height Exception>>Expected:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("Product Overview vSpace1Height Error>>Expected:70px");
+			count = count + 1;
+		}
+		
+
+		//Verify the text space6 has the height of 40px
+		try {
+			
+			String locator = locatorReader.getLocator("VerifyPixel.vSpace1HeightHeading");
+			String font_size = this.getCSS(locator, "font-size");
+			String line_height = this.getCSS(locator, "line-height");
+			String locator1 = locatorReader.getLocator("VerifyPixel.vSpace4HeightBtwHeading");
+			String font_size_1 = this.getCSS(locator1, "font-size");
+			String line_height_1 = this.getCSS(locator1, "line-height");
+			
+			// Substring: To remove pixel(px text) from value
+			String line_height_wopx = line_height.substring(0, 3);
+			String font_size_wopx = font_size.substring(0, 2);
+			
+			String line_height_1_wopx = line_height_1.substring(0, 3);
+			String font_size_1_wopx = font_size_1.substring(0, 2);
+		
+			int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx)+Integer.parseInt("1");
+			int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx)+Integer.parseInt("1");
+		
+			int Totaladdedpixel = getsubpixel_1+ getsubpixel;
+			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+			System.out.println("Actual result" + Totalpixelvaluewithpixel);
+		Assert.assertEquals(ParaSpace1_height, Totalpixelvaluewithpixel);
+		}
+
+		catch (Exception ex) {
+			System.out.println("Product Overview ParaSpace1_height Exception>>Expected:40px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("Product Overview ParaSpace1_height Error>>Expected:40px");
+			count = count + 1;
+		}
+
+		//Verify the text space6 has the height of 40px
+		try {
+			
+			String locator = locatorReader.getLocator("VerifyPixel.vSpace4HeightBtwHeading");
+			String font_size = this.getCSS(locator, "font-size");
+			String line_height = this.getCSS(locator, "line-height");
+			String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace6HeightText");
+			String font_size_1 = this.getCSS(locator1, "font-size");
+			String line_height_1 = this.getCSS(locator1, "line-height");
+			String margin_top=this.getCSS(locator1, "margin-top");
+			
+			// Substring: To remove pixel(px text) from value
+			String line_height_wopx = line_height.substring(0, 3);
+			String font_size_wopx = font_size.substring(0, 2);
+			
+			String line_height_1_wopx = line_height_1.substring(0, 2);
+			String font_size_1_wopx = font_size_1.substring(0, 2);
+			String margin_top_wopx = margin_top.substring(0, 1);
+			
+		
+			int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+			int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+		
+			int Totaladdedpixel = getsubpixel_1+ getsubpixel+Integer.parseInt(margin_top_wopx);
+			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+			System.out.println("Actual result" + Totalpixelvaluewithpixel);
+		Assert.assertEquals(ParaSpace1_height, Totalpixelvaluewithpixel);
+		}
+
+		catch (Exception ex) {
+			System.out.println("Product Overview ParaSpace1_height Exception>>Expected:40px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("Product Overview ParaSpace1_height Error>>Expected:40px");
+			count = count + 1;
+		}
+		
+		//Verify TextSpace7 has the height of 27px
+try {
+			
+			String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace6HeightText");
+			String font_size_1 = this.getCSS(locator1, "font-size");
+			String line_height_1 = this.getCSS(locator1, "line-height");
+			
+			// Substring: To remove pixel(px text) from value
+			String line_height_1_wopx = line_height_1.substring(0, 2);
+			String font_size_1_wopx = font_size_1.substring(0, 2);
+		
+			int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+		
+			int Totaladdedpixel = getsubpixel_1+ getsubpixel_1+Integer.parseInt("1");
+			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+			System.out.println("Actual result" + Totalpixelvaluewithpixel);
+		Assert.assertEquals(vTextSpace7, Totalpixelvaluewithpixel);
+		}
+
+		catch (Exception ex) {
+			System.out.println("Product Overview vTextSpace7 Exception>>Expected:27px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("Product Overview vTextSpace7 Error>>Expected:27px");
+			count = count + 1;
+		}
+
+//Verify TextSpace7 has the height of 27px
+try {
+			
+			String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace6HeightText");
+			String font_size_1 = this.getCSS(locator1, "font-size");
+			String line_height_1 = this.getCSS(locator1, "line-height");
+			
+			// Substring: To remove pixel(px text) from value
+			String line_height_1_wopx = line_height_1.substring(0, 2);
+			String font_size_1_wopx = font_size_1.substring(0, 2);
+		
+			int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+	
+			int Totaladdedpixel = getsubpixel_1+ getsubpixel_1+Integer.parseInt("1");
+			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+			System.out.println("Actual result" + Totalpixelvaluewithpixel);
+		Assert.assertEquals(vTextSpace7, Totalpixelvaluewithpixel);
+		}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vTextSpace7 Exception>>Expected:27px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vTextSpace7 Error>>Expected:27px");
+	count = count + 1;
+}
+		
+		//Verify Gutter2 has the width of 80px
+			
+			try {
+			
+				String locator = locatorReader.getLocator("VerifyPixel.vGutterSapce2Width1");
+				String width = this.getCSS(locator, "width");
+				System.out.println("Actual result" + width);
+				Assert.assertEquals(vGutter2Width, width);
+				
+				String locator1 = locatorReader.getLocator("VerifyPixel.vGutterSapce2Width2");
+				String width1 = this.getCSS(locator1, "width");
+				System.out.println("Actual result" + width1);
+				Assert.assertEquals(vGutter2Width, width1);
+				
+				String locator2 = locatorReader.getLocator("VerifyPixel.vGutterSapce2Width3");
+				String width2 = this.getCSS(locator2, "width");
+				System.out.println("Actual result" + width2);
+			Assert.assertEquals(vGutter2Width, width2);
+			}
+			
+			catch (Exception ex) {
+				System.out.println("Product Overview vGutter2Width Exception>>Expected:80px");
+				count = count + 1;
+			} catch (Error ex) {
+				System.out.println("Product Overview vSpace1Height Error>>Expected:80px");
+				count = count + 1;
+			}
+			
+		//Verify Call Out Body Copy Container has the width of 450px and Text is Vertically Assigned
+			try {
+				
+				String locator = locatorReader.getLocator("VerifyPixel.vCallOutBodyContainer");
+				String width = this.getCSS(locator, "width");
+				System.out.println("Actual result" + width);
+				Assert.assertEquals(CallOutBodyWidth, width);
+				
+				String locator1 = locatorReader.getLocator("VerifyPixel.vCallOutBodyContainerP");
+				String width1 = this.getCSS(locator1, "text-align");
+				System.out.println("Actual result" + width1);
+				String centerWidth="left";
+				Assert.assertEquals(centerWidth, width1);
+				
+				String locator2 = locatorReader.getLocator("VerifyPixel.vCallOutBodyContainerDiv");
+				String padding_top = this.getCSS(locator2, "padding-top");
+				String padding_bottom = this.getCSS(locator2, "padding-bottom");
+				String padding_bottom_wopx = padding_bottom.substring(0, 3);
+				
+				int padding_bottom1= Integer.parseInt(padding_bottom_wopx) +Integer.parseInt("1");
+				String Totalpixelvaluewithpixel = padding_bottom1 + "px";
+				Assert.assertEquals(padding_top, Totalpixelvaluewithpixel);
+				
+				
+				}
+			
+			catch (Exception ex) {
+				System.out.println("Product Overview Width Exception>>Expected:450px");
+				count = count + 1;
+			} catch (Error ex) {
+				System.out.println("Product Overview Width Error>>Expected:450px");
+				count = count + 1;
+			}
+			
+			//verify Call Out Box(2) has the Text Vertically centered
+try {
+				
+				String locator2 = locatorReader.getLocator("VerifyPixel.vCallOutBody1ContainerDiv");
+				String padding_top = this.getCSS(locator2, "padding-top");
+				String padding_bottom = this.getCSS(locator2, "padding-bottom");
+				// Substring: To remove pixel(px text) from value
+				String padding_bottom_wopx = padding_bottom.substring(0, 3);
+				
+				int padding_bottom1= Integer.parseInt(padding_bottom_wopx) +Integer.parseInt("1");
+				String Totalpixelvaluewithpixel = padding_bottom1 + "px";
+				Assert.assertEquals(padding_top, Totalpixelvaluewithpixel);
+				
+					}
+			
+			catch (Exception ex) {
+				System.out.println("Product Overview Width Exception>>Expected:Center");
+				count = count + 1;
+			} catch (Error ex) {
+				System.out.println("Product Overview Width Error>>Expected:Center");
+				count = count + 1;
+			}
+
+//Verify vTextSpace10 has the height of 25px
+try {
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace10Height1");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+
+	
+	// Substring: To remove pixel(px text) from value
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+	
+	int Totaladdedpixel = getsubpixel_1+ getsubpixel_1+Integer.parseInt("5");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(vTextSpace10, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vTextSpace10 Exception>>Expected:25px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vTextSpace10 Error>>Expected:25px");
+	count = count + 1;
+}
+
+//Verify TextSpace6(1) has the height of 40px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vTextSpace10Height1P");
+	String font_size = this.getCSS(locator, "font-size");
+	String line_height = this.getCSS(locator, "line-height");
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace10Height1");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+	String line_height_1 = this.getCSS(locator1, "line-height");
+	String margin_bottom=this.getCSS(locator1, "margin-bottom");
+	// Substring: To remove pixel(px text) from value
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	String line_height_wopx = line_height.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+	String margin_bottom_wopx=margin_bottom.substring(0,2);
+	
+	int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+
+	int Totaladdedpixel = getsubpixel+ getsubpixel_1+Integer.parseInt(margin_bottom_wopx)-Integer.parseInt("3");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(ParaSpace1_height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview ParaSpace1_height Exception>>Expected:40px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview ParaSpace1_height Error>>Expected:40px");
+	count = count + 1;
+}
+
+//Verify Heading Leading vTextSpace8 has the height of 20px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vTextSpace10Height1P");
+	String font_size = this.getCSS(locator, "font-size");
+	String line_height = this.getCSS(locator, "line-height");
+	
+	
+	// Substring: To remove pixel(px text) from value
+	String line_height_wopx = line_height.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+
+	
+	int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+	
+
+	int Totaladdedpixel = getsubpixel+ getsubpixel-Integer.parseInt("6");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(vHeadLead8, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vHeadLead8 Exception>>Expected:20px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vHeadLead8 Error>>Expected:20px");
+	count = count + 1;
+}
+
+//Verify Heading Leading vTextSpace8(1) has the height of 20px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vTextSpace10Height1P");
+	String font_size = this.getCSS(locator, "font-size");
+	String line_height = this.getCSS(locator, "line-height");
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace8LeadHead");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+
+	
+	// Substring: To remove pixel(px text) from value
+	String line_height_wopx = line_height.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+
+	int Totaladdedpixel = getsubpixel+ getsubpixel_1-Integer.parseInt("3");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(vHeadLead8, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vHeadLead8 Exception>>Expected:20px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vHeadLead8 Error>>Expected:20px");
+	count = count + 1;
+}
+//Verify vSpace1 Below Third Product Overview has the height of 70px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vSpace1HeightFooter");
+	String padding_top = this.getCSS(locator, "padding-top");
+
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextFooter");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+	
+	String line_height_1 = this.getCSS(locator1, "line-height");
+
+	
+	// Substring: To remove pixel(px text) from value
+	String padding_top_wopx = padding_top.substring(0, 2);
+	
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+
+	int Totaladdedpixel = Integer.parseInt(padding_top_wopx)+ getsubpixel_1+Integer.parseInt("4");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(VSpace1height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vSpace1Height Exception>>Expected:70px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vSpace1Height Error>>Expected:70px");
+	count = count + 1;
+}
+
+//Verify TextSpace6 has the height of 40px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextFooter");
+	String margin_bottom = this.getCSS(locator, "margin-bottom");
+	String font_size = this.getCSS(locator, "font-size");
+	String line_height = this.getCSS(locator, "line-height");
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextFooter");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+	
+	
+	// Substring: To remove pixel(px text) from value
+	String margin_bottom_wopx = margin_bottom.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+	String line_height_wopx = line_height.substring(0, 2);
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+	
+
+	int Totaladdedpixel = Integer.parseInt(margin_bottom_wopx)+ getsubpixel_1+getsubpixel+Integer.parseInt("1");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(ParaSpace1_height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview ParaSpace1_height Exception>>Expected:40px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview ParaSpace1_height Error>>Expected:40px");
+	count = count + 1;
+}
+
+//Verify vTextSpace8 has the height of 20px
+try {
+	String locator1 = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextFooter");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+	
+	String line_height_1 = this.getCSS(locator1, "line-height");
+
+	
+	// Substring: To remove pixel(px text) from value
+
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+	
+	
+	int Totaladdedpixel = getsubpixel_1+getsubpixel_1;
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(vHeadLead8, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vHeadLead8 Exception>>Expected:20px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vHeadLead8 Error>>Expected:20px");
+	count = count + 1;
+}
+//Verify vSpace1 has the height of 70px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vSpace1HeightFooter");
+	String padding_top = this.getCSS(locator, "padding-top");
+	String font_size = this.getCSS(locator, "font-size");
+	
+	String line_height = this.getCSS(locator, "line-height");
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextFooter2");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+	
+	String line_height_1 = this.getCSS(locator1, "line-height");
+
+	
+	// Substring: To remove pixel(px text) from value
+	String padding_top_wopx = padding_top.substring(0, 2);
+	String line_height_wopx = line_height.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+	
+	
+	int Totaladdedpixel = Integer.parseInt(padding_top_wopx)+ getsubpixel_1+getsubpixel+Integer.parseInt("2");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(VSpace1height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vSpace1Height Exception>>Expected:70px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vSpace1Height Error>>Expected:70px");
+	count = count + 1;
+}
+//Verify vSpace1 has the height of 70px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vSpace1HeightFooter");
+	String padding_top = this.getCSS(locator, "padding-bottom");
+
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextFooter2");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+
+	
+	// Substring: To remove pixel(px text) from value
+	String padding_top_wopx = padding_top.substring(0, 2);
+
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	
+	int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+
+
+	int Totaladdedpixel = Integer.parseInt(padding_top_wopx)+ getsubpixel_1+Integer.parseInt("0");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(VSpace1height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vSpace1Height Exception>>Expected:70px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vSpace1Height Error>>Expected:70px");
+	count = count + 1;
+}
+//Verify Footer vSPace1 has the height of 70px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextInFooter");
+	String padding_top = this.getCSS(locator, "padding-top");
+	
+	
+	System.out.println("Actual result" + padding_top);
+Assert.assertEquals(VSpace1height, padding_top);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vSpace1Height Exception>>Expected:70px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vSpace1Height Error>>Expected:70px");
+	count = count + 1;
+}
+//Verify vSpace6 has the height of 95px
+
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextInFooter");
+	String padding_bottom = this.getCSS(locator, "padding-bottom");
+	String locator1 = locatorReader.getLocator("VerifyPixel.vSPace1AboveTextInFooter1");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+	
+
+	// Substring: To remove pixel(px text) from value
+		String padding_top_wopx = padding_bottom.substring(0, 2);
+		String line_height_1_wopx = line_height_1.substring(0, 2);
+		String font_size_1_wopx = font_size_1.substring(0, 2);
+		int getsubpixel_1=Integer.parseInt(line_height_1_wopx)- Integer.parseInt(font_size_1_wopx);
+		
+		
+		int Totaladdedpixel = Integer.parseInt(padding_top_wopx)+ getsubpixel_1+Integer.parseInt("2");
+		String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	
+	
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(vSpace6Height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vSpace6Height Exception>>Expected:95px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vSpace6Height Error>>Expected:95px");
+	count = count + 1;
+}
+
+//Verify TextSpace6 has the height of 40px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vTextSpace6InFooter");
+	
+	String font_size = this.getCSS(locator, "font-size");
+	String line_height = this.getCSS(locator, "line-height");
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace6InFooter1");
+	String margin_top = this.getCSS(locator1, "margin-top");
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+	
+	
+	// Substring: To remove pixel(px text) from value
+	String margin_top_wopx = margin_top.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+	String line_height_wopx = line_height.substring(0, 2);
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+		
+	int getsubpixel=Integer.parseInt(font_size_wopx)- Integer.parseInt(line_height_wopx);
+	int getsubpixel_1=Integer.parseInt(font_size_1_wopx)- Integer.parseInt(line_height_1_wopx);
+
+	int Totaladdedpixel = Integer.parseInt(margin_top_wopx)+ getsubpixel_1+getsubpixel+Integer.parseInt("3");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(ParaSpace1_height, Totalpixelvaluewithpixel);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview ParaSpace1_height Exception>>Expected:40px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview ParaSpace1_height Error>>Expected:40px");
+	count = count + 1;
+}
+
+//Verify TextSpace8 has the height of 20px
+
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vTextSpace8Learn");
+	String top=this.getCSS(locator, "top");
+	
+	String margin_top = this.getCSS(locator, "margin-top");
+	String font_size = this.getCSS(locator, "font-size");
+	String line_height = this.getCSS(locator, "line-height");
+	
+	String locator1 = locatorReader.getLocator("VerifyPixel.vTextSpace6InFooter1");
+	
+	String font_size_1 = this.getCSS(locator1, "font-size");
+
+	String line_height_1 = this.getCSS(locator1, "line-height");
+	
+	// Substring: To remove pixel(px text) from value
+	String margin_top_wopx = margin_top.substring(0, 2);
+	String font_size_wopx = font_size.substring(0, 2);
+	String line_height_wopx = line_height.substring(0, 2);
+	String top_wopx = top.substring(0, 1);
+	
+	String line_height_1_wopx = line_height_1.substring(0, 2);
+	String font_size_1_wopx = font_size_1.substring(0, 2);
+	
+	int getsubpixel=Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx);
+	int getsubpixel_1=Integer.parseInt(font_size_1_wopx)- Integer.parseInt(line_height_1_wopx);
+	
+	
+	int Totaladdedpixel = Integer.parseInt(margin_top_wopx)+ getsubpixel_1+getsubpixel+Integer.parseInt(top_wopx)+Integer.parseInt("1");
+	String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
+	System.out.println("Actual result" + Totalpixelvaluewithpixel);
+Assert.assertEquals(vHeadLead8, Totalpixelvaluewithpixel);
+}
+catch (Exception ex) {
+	System.out.println("Product Overview vHeadLead8 Exception>>Expected:20px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vHeadLead8 Error>>Expected:20px");
+	count = count + 1;
+}
+//Verify vSpace1 has the height of 70px
+try {
+	String locator = locatorReader.getLocator("VerifyPixel.vTextSpace1InFooter2");
+	String padding_top = this.getCSS(locator, "margin-top");
+
+	
+System.out.println("Actual result" + padding_top);
+Assert.assertEquals(VSpace1height, padding_top);
+}
+
+catch (Exception ex) {
+	System.out.println("Product Overview vSpace1Height Exception>>Expected:70px");
+	count = count + 1;
+} catch (Error ex) {
+	System.out.println("Product Overview vSpace1Height Error>>Expected:70px");
+	count = count + 1;
+}
+System.out.println("count value is :::" + count);
+Assert.assertTrue(count==0);	
+
+//Verify OverView product Main Bill Board has the width of 2000px and height of 785px
+
+					/*
+		//Verify text space 7 has the height of 27 px.
+		String prodParagraphSpace1_height = this.getCSS("VerifyPixel.prodParagraphSpace1_height", "line-height");
+		System.out.println("ParagraphSpace1_height is " + ParagraphSpace1_height);
+		Assert.assertEquals(prodParagraphSpace1_height, ParaSpace1_height);
+		//Verify overview product 1  has the width of 980 px and Height of 785 px.
+		String prodimgheight = this.getCSS("VerifyPixel.prodimgheight", "height");
+		Assert.assertEquals(prodimgheight, height);
+		String prodimgwidth = this.getCSS("VerifyPixel.prodimgwidth", "width");
+		Assert.assertEquals(prodimgwidth, width);
+		//Verify Image: LifeStyle / Product has the width of 860 px and height of 899px
+		String prodimgheight1 = this.getCSS("VerifyPixel.prodimgheight1", "height");
+		Assert.assertEquals(prodimgheight1, height);
+		String prodimgwidth1 = this.getCSS("VerifyPixel.prodimgwidth1", "width");
+		Assert.assertEquals(prodimgwidth1, width);		
+		//Verify Callout body copy has the width of 450px and Height less than 450 px.
+		String CalloutBodyCopyHeight = this.getCSS("VerifyPixel.CalloutBodyCopyHeight", "height");
+		String CalloutBodyCopyWidth = this.getCSS("VerifyPixel.CalloutBodyCopyWidth", "width");
+		System.out.println("CalloutBodyCopyWidth image width is " + CalloutBodyCopyHeight);
+		System.out.println("CalloutBodyCopyWidth image width is " + CalloutBodyCopyWidth);
+		Assert.assertEquals(CalloutBodyCopyHeight, CallBodyCopHeight);
+		Assert.assertEquals(CalloutBodyCopyWidth, CallBodyCopwidth);
+		//Verify Text space 10 has the height of 25 px.
+		String prodParagraphSpace1_height1 = this.getCSS("VerifyPixel.prodParagraphSpace1_height1", "line-height");
+		System.out.println("ParagraphSpace1_height is " + prodParagraphSpace1_height1);
+		Assert.assertEquals(ParagraphSpace1_height, ParaSpace1_height);
+		//Verify HeadLine leading has the height of 20 px.
+		String HeadlineLeading_height = this.getCSS("VerifyPixel.HeadlineLeading_height", "margin-bottom");
+		Assert.assertEquals(HeadlineLeading_height, HeadlineLead_height);
+		//Verify Callout Body Copy -Centered has the width 980 px and Height as varriable
+		String prodCalloutBodyCopyHeight = this.getCSS("VerifyPixel.prodCalloutBodyCopyHeight", "height");
+		String prodCalloutBodyCopyWidth = this.getCSS("VerifyPixel.prodCalloutBodyCopyWidth", "width");
+		System.out.println("CalloutBodyCopyWidth image width is " + prodCalloutBodyCopyHeight);
+		System.out.println("CalloutBodyCopyWidth image width is " + prodCalloutBodyCopyWidth);
+		Assert.assertEquals(CalloutBodyCopyHeight, CallBodyCopHeight);
+		Assert.assertEquals(CalloutBodyCopyWidth, CallBodyCopwidth);
+		//Verify Boxed image icon centered has the width of 450 px  and height 450 px.
+		String prodCalloutBodyCopyHeight1 = this.getCSS("VerifyPixel.prodCalloutBodyCopyHeight1", "height");
+		String prodCalloutBodyCopyWidth1 = this.getCSS("VerifyPixel.prodCalloutBodyCopyWidth1", "width");
+		System.out.println("CalloutBodyCopyWidth image width is " + prodCalloutBodyCopyHeight1);
+		System.out.println("CalloutBodyCopyWidth image width is " + prodCalloutBodyCopyWidth1);
+		Assert.assertEquals(CalloutBodyCopyHeight, CallBodyCopHeight);
+		Assert.assertEquals(CalloutBodyCopyWidth, CallBodyCopwidth);
+	}
+	
+	//Verify product page.
+	public void VerifyProductPage()
+	{
+		//Click on the Menu icon
+		this.clickMenuIcon();
+		
+		//Click on a brand Behringer
+		this.clickonBehringerBrand();
+		
+		//Click on Product link
+		this.clickonProductLink();
+		
+		//Verify user redirected to Product page
+		this.WaitForElementPresent(locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio")));	
+	}
+	
+	//Verify product page for all brands.
+	public void VerifyProductPageAllBrands()
+	{
+		//Click on the Menu icon
+		this.clickMenuIcon();
+		
+		//Click on a brand Behringer
+		this.clickonBehringerBrand();
+		
+		//Click on Product link
+		this.clickonProductLink();		
+		
+		//Verify user redirected to Product page
+		this.WaitForElementPresent(locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio"), 5);
+		Assert.assertTrue(this.isElementPresent(locatorReader.getLocator("ProductOverViewPage.ClickComputerAudio")));	
+	}
+	*/
+}
+}

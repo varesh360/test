@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locators>
+<LifeStyle_HomePage>
+<clickentertainmentimage><![CDATA[//div[@class='spotlight']/a[@href='/lifestyleandhome']/img]]></clickentertainmentimage>
+<HomeBillboardlocator><![CDATA[//div[@class="slide-item"]/a/img]]></HomeBillboardlocator>
+<linedivider1><![CDATA[//div[@class="spotlight"]]]></linedivider1>
+<spotlightimage><![CDATA[//div[@class='banner-group']//a/img]]></spotlightimage>
+<spotlight2image><![CDATA[//div[@class='banner-group']/div[2]/a/img]]></spotlight2image>
+<spotlight3Image><![CDATA[//div[@class='banner-group']/div[3]/a/img]]></spotlight3Image>
+<spotlight4Image><![CDATA[//div[@class='banner-group']/div[4]/a/img]]></spotlight4Image>
+<spotlight5Image><![CDATA[//div[@class='banner-group']/div[5]/a/img]]></spotlight5Image>
+</LifeStyle_HomePage>
+ </Locators>

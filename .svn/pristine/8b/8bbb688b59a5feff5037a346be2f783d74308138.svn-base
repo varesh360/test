@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="CrossTest4"
+	annotations="JDK">
+	<test name="CrossTest4" junit="false"
+		preserve-order="true">
+		<classes>
+		
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_CopyCart" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_DownloadProductList" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryDownload" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_OrderHistoryUpdate" />
+			
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BAdd_DeleteItemCart" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2BCheckOutPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ChangePassword" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.Login_B2B" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotPasswordPage" />
+			
+			
+			
+		</classes>		
+	</test>
+</suite> 

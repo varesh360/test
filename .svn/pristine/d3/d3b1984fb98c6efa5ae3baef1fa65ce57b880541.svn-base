@@ -1,0 +1,390 @@
+/*==============================================================================================================================
+ File Name    : B2B_SearchResult_Helper.java
+ ClassName    :B2B_SearchResult_Helper
+ Summary      : Contains automation scripts for B2B_SearchResult_Helper store.
+ ===============================================================================================================================
+ History      :   Company            Created By     
+                  360logica                         
+
+ ===============================================================================================================================
+ Remarks      :   Tests - 
+ ===============================================================================================================================*/
+
+
+package test.java.com.MusicGroup.pagehelper;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+public class B2B_SearchResult_Helper extends DriverHelper {
+	private LocatorReader locatorReader;
+
+	public B2B_SearchResult_Helper(WebDriver driver) {
+		super(driver);
+		locatorReader = new LocatorReader("B2B_SearchResultPage.xml");
+	
+	}
+	
+	//Click on SearchSuggestionField and Enter the Search Product
+	public void clickSearchbox()
+	
+	{
+	
+		String locator = locatorReader.getLocator("B2B_SearchResultPage.entertextinserachfield");
+		this.WaitForElementEnabled(locator, 50);
+		String val = "X";
+		clickOn(locator);
+		sendKeys(locator, val);
+		presEnterKey(locator);
+		
+	}
+	
+	//Click on Registraion Link
+	public void EnterSearchdata()
+	
+	{
+	
+		String locator = locatorReader.getLocator("B2B_RegistraionPage.clickregistraionlink");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+		
+	}
+	
+	//Check Page not found
+	public void checkPageNotFound()
+	{
+		String actualTitle1 = driver.getTitle();
+		System.out.println("Get Titile"+ actualTitle1);
+		String expectedTitle1 = "Not Found | MUSIC Group";
+		Assert.assertFalse(actualTitle1==expectedTitle1);
+	
+	}
+
+	//Reach upto B2BSearchField
+	public void ReachUptoB2BSearchField()
+	{
+		
+		//Check page not found
+				this.checkPageNotFound();
+		//Click on Cartlink on B2BPage
+		this.clickSearchbox();
+			//Click on Write your own button
+		//Check page not found
+			this.checkPageNotFound();
+		
+		
+	}
+	public void verifySearchResult(String TextSpace4Height, String vSpace2Height,String gutter28Width,String gap36Width,String vSpace11Height,String gutter9Width,String gutter27Width,String gap17Width,String textSpace4Height)
+	{
+		
+		ReachUptoB2BSearchField();
+		int count = 0;
+		// Verify gutter28Width has the width of 17px in left.
+		try {
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gutter28Widthpagination");
+			String padding_left = this.getCSS(locator, "padding-left");
+			System.out.println("padding_left"+padding_left);
+			
+			String locator1 = locatorReader.getLocator("B2B_SearchResultPage.gutter28Widthpagination1");
+			String padding_left1 = this.getCSS(locator1, "padding-left");
+			
+		System.out.println("padding_left1"+padding_left1);
+			
+			String padding_left_wopx = padding_left.substring(0, 2);
+		String padding_left1_wopx = padding_left1.substring(0, 1);
+			int getaddpixel = Integer.parseInt(padding_left_wopx)+ Integer.parseInt(padding_left1_wopx);
+			//int getaddpixel = Integer.parseInt(padding_left_wopx);
+			String getfinalValue=getaddpixel+"px";
+			System.out.println("Actual Result" +getfinalValue);
+			Assert.assertEquals(gutter28Width,getfinalValue);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace1Height Exception>>Expected Pading Top:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Padding:70px");
+			count = count + 1;
+		}
+		//VErify Gutter28Width has the width of 17px in right(Issue)
+		try {
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gutter28Widthpagination");
+			String padding_left = this.getCSS(locator, "padding-right");
+			System.out.println("padding_left"+padding_left);
+			
+			String locator1 = locatorReader.getLocator("B2B_SearchResultPage.Verifygutter28WidthPaginationinRight");
+			String padding_left1 = this.getCSS(locator1, "padding-right");
+			
+		System.out.println("padding_left1"+padding_left1);
+			
+			String padding_left_wopx = padding_left.substring(0, 2);
+		String padding_left1_wopx = padding_left1.substring(0, 2);
+			int getaddpixel = Integer.parseInt(padding_left_wopx)+ Integer.parseInt(padding_left1_wopx);
+			//int getaddpixel = Integer.parseInt(padding_left_wopx);
+			String getfinalValue=getaddpixel+"px";
+			System.out.println("Actual Result" +getfinalValue);
+			Assert.assertEquals(gutter28Width,getfinalValue);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace1Height Exception>>Expected Pading Top:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Padding:70px");
+			count = count + 1;
+		}
+		
+		// Verifygap17Width has the width of 10px(1 left .
+		
+		try {
+			String locator3=locatorReader.getLocator("B2B_SearchResultPage.VerifyGap17WidthInPrev");
+			String paddingleft=this.getCSS(locator3, "padding-left");
+			System.out.println("PaddingLeftis"+paddingleft);
+			System.out.println("+++++++----------------+++++");
+			String paddingleft_wopx = paddingleft.substring(0, 2);
+			System.out.println("Actual Result padding_left1_wopx" +paddingleft_wopx);
+			int AfterSubtract=Integer.parseInt(paddingleft_wopx)-Integer.parseInt("8");
+			String getPixel=AfterSubtract+"px";
+			System.out.println("afterSubtract"+AfterSubtract);
+			System.out.println("gap17Width"+gap17Width);
+			Assert.assertEquals(gap17Width,getPixel);
+			
+			//verify Gap17 width before and after "1" has the width of 10px
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gap17Widthlocator");
+			String padding_left = this.getCSS(locator, "margin-left");
+			String locator5= locatorReader.getLocator("B2B_SearchResultPage.VerifyGap17WidthBefore1");
+			String padding1_left = this.getCSS(locator5, "padding-left");
+			String padding_left_wopx = padding_left.substring(0, 1);
+			String padding1_left_wopx = padding1_left.substring(0, 1);
+			 
+			int AdPixel=Integer.parseInt(padding_left_wopx)+Integer.parseInt(padding1_left_wopx)+Integer.parseInt("1");
+			System.out.println("AdPixel is"+AdPixel);
+			String Getpixel1=AdPixel+"px";
+			Assert.assertEquals(gap17Width,Getpixel1);
+			
+			String padding1_right = this.getCSS(locator5, "padding-right");
+			Assert.assertEquals(gap17Width,padding1_right);
+			
+			
+			//Verify Gap17 width after "Sort By" has the width of 10px
+			String loactor6=locatorReader.getLocator("B2B_SearchResultPage.VerifyGap17AfterSortBy");
+			String loactor7=locatorReader.getLocator("B2B_SearchResultPage.VerifyGap17BeforeDropDwon");
+			String margin_left = this.getCSS(loactor7, "margin-left");
+			String margin_right = this.getCSS(loactor6, "margin-right");
+			
+			
+			String margin_left_wopx =  margin_left.substring(0, 1);
+			System.out.println("Actual Result margin_left_wopx" +margin_left_wopx);
+			
+			String margin_right_wopx = margin_right.substring(0, 1);
+			System.out.println("Actual Result padding_left1_wopx" +margin_right_wopx);
+			
+			int Getpixel2=Integer.parseInt(margin_right_wopx)+Integer.parseInt(margin_left_wopx);
+			String ActualPixel=Getpixel2+"px";
+			System.out.println("ActualResultpixel"+ActualPixel);
+			Assert.assertEquals(gap17Width,ActualPixel);
+			
+						
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace1Height Exception>>Expected Pading Top:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Padding:70px");
+			count = count + 1;
+		}
+
+		
+		// Verify vSpace1Height has the height of 70px .
+		try {
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gap17Widthlocator");
+			String padding_left = this.getCSS(locator, "padding-left");
+			String padding_right = this.getCSS(locator, "padding-right");
+			String margin_left = this.getCSS(locator, "margin-left");
+			String margin_right = this.getCSS(locator, "margin-right");
+			
+			System.out.println("Actual Result padding_left" +padding_left);
+			System.out.println("Actual Result padding_right" +padding_right);
+			System.out.println("Actual Result margin_left" +margin_left);
+			System.out.println("Actual Result margin_right" +margin_right);
+			
+			String locator1 = locatorReader.getLocator("B2B_SearchResultPage.gap17widthlocator1");
+			String padding_left1 = this.getCSS(locator1, "padding-left");
+			String padding_right1 = this.getCSS(locator1, "padding-right");
+			String margin_left1 = this.getCSS(locator1, "margin-left");
+			String margin_right1 = this.getCSS(locator1, "margin-right");
+					
+			
+			System.out.println("Actual Result" +padding_right1);
+			Assert.assertEquals(gap17Width,padding_right1);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace1Height Exception>>Expected Pading Top:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Padding:70px");
+			count = count + 1;
+		}
+
+		// Verify gap36Width has the width of 4px .(Issue)
+		try {
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gap36Widthlocator");
+			String margin_right = this.getCSS(locator, "margin-right");
+				
+			
+			System.out.println("Actual Result" +margin_right);
+			Assert.assertEquals(gap36Width,margin_right);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B gap36Width Exception>>Expected Pading Top:4px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B gap36Width Error>>Expected Padding:4px");
+			count = count + 1;
+		}
+
+		// Verify gap36Width has the width of 4px .(Issue)
+		try {
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gap36Widthlocator");
+			String margin_right = this.getCSS(locator, "margin-right");
+				
+			
+			System.out.println("Actual Result" +margin_right);
+			Assert.assertEquals(gap36Width,margin_right);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B gap36Width Exception>>Expected Pading Top:4px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B gap36Width Error>>Expected Padding:4px");
+			count = count + 1;
+		}
+		// Verify gap17Width has the width of 10px(Sort)by .
+		try {
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gap17widthsoryby");
+			String margin_right = this.getCSS(locator, "margin-right");
+			
+			String locator1 = locatorReader.getLocator("B2B_SearchResultPage.gap17widthsorybydropdown");
+			String padding_left = this.getCSS(locator1, "padding-left");
+			
+			
+			String margin_left_wopx =  margin_right.substring(0, 1);
+			String padding_left1_wopx = padding_left.substring(0, 1);
+						
+			int getaddpixel = Integer.parseInt(margin_left_wopx)+ Integer.parseInt(padding_left1_wopx); 
+			String getfinalValue=getaddpixel+"px";
+			
+			System.out.println("Actual Result" +getfinalValue);
+			Assert.assertEquals(gap17Width,getfinalValue);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B gap36Width Exception>>Expected Pading Top:4px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B gap36Width Error>>Expected Padding:4px");
+			count = count + 1;
+		}
+		
+		// Verify gap28Width has the width of 17px right side .
+		try {
+			
+			
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.gutter28Widthpagination");
+			String margin_right = this.getCSS(locator, "padding-right");
+						
+			String locator1 = locatorReader.getLocator("B2B_SearchResultPage.gap17widthRight");
+			String padding_left = this.getCSS(locator1, "margin-right");
+			
+			
+			String margin_left_wopx =  margin_right.substring(0, 2);
+			String padding_left1_wopx = padding_left.substring(0, 1);
+						
+			int getaddpixel = Integer.parseInt(margin_left_wopx)+ Integer.parseInt(padding_left1_wopx); 
+			String getfinalValue=getaddpixel+"px";
+			
+			System.out.println("Actual Result" +getfinalValue);
+			Assert.assertEquals(gap17Width,getfinalValue);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B gap28Width Exception>>Expected :17px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B gap28Width Error>>Expected :17px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace1Height has the has the height 70px (Issue).
+		try {
+			
+			
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.vSpace1Heightlocator");
+			String margin_top = this.getCSS(locator, "margin-top");
+			System.out.println("margin_top"+margin_top);
+						
+			String locator1 = locatorReader.getLocator("B2B_SearchResultPage.vspace1heightlocatorabovecopy");
+			String padding_top = this.getCSS(locator1, "padding-top");
+		
+			
+			String margin_top_wopx =  margin_top.substring(0, 2);
+			String padding_top_wopx = padding_top.substring(0, 2);
+						
+			int getaddpixel = Integer.parseInt(margin_top_wopx)+ Integer.parseInt(padding_top_wopx); 
+			String getfinalValue=getaddpixel+"px";
+			
+			System.out.println("Actual Result" +getfinalValue);
+			Assert.assertEquals(gap17Width,getfinalValue);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B vSpace1Height Exception>>Expected :70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B vSpace1Height Error>>Expected :70px");
+			count = count + 1;
+		}		
+		//Verify above pagination Vspace2 has the height of 20px
+		try {
+			
+			
+			String locator = locatorReader.getLocator("B2B_SearchResultPage.VerifyVspace2");
+			String margin_top = this.getCSS(locator, "margin-bottom");
+			System.out.println("margin_top"+margin_top);
+						
+			
+			
+			System.out.println("Actual Result" +margin_top);
+			Assert.assertEquals(vSpace2Height,margin_top);
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B vSpace1Height Exception>>Expected :70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B vSpace1Height Error>>Expected :70px");
+			count = count + 1;
+		}		
+		System.out.println("count value is :::" + count);
+		Assert.assertTrue(count == 0);
+	
+	}
+	
+	
+	
+		
+}

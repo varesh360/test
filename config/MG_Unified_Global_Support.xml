@@ -1,0 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="MG_Unified_Global_Support"
+	annotations="JDK">
+	<test name="MG_Unified_Global_Support" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_UnifiedGlobalSupport" />
+		</classes>		
+	</test>
+</suite> 

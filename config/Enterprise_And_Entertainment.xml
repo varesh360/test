@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="Enterprise_And_Entertainment"
+	annotations="JDK">
+	<test name="Enterprise_And_Entertainment" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Enterprise_And_Entertainment" />
+		</classes>		
+	</test>
+</suite> 

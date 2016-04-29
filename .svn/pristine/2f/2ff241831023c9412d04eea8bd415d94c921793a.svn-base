@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locators>
+<Creating_HomePage>
+<clickCreationimage><![CDATA[//div[@class='spotlight']/a[@href='/creation']/img]]></clickCreationimage>
+<HomeBillboardlocator><![CDATA[//div[@class="slide-item"]/a/img]]></HomeBillboardlocator>
+<linedivider><![CDATA[//div[@class="spotlight"]]]></linedivider>
+<spotlightimage><![CDATA[//div[@class='banner-group']//a/img]]></spotlightimage>
+<spotlight2image><![CDATA[//div[@class='banner-group']/div[2]/a/img]]></spotlight2image>
+<SpotLightImage3><![CDATA[//div[@class='spotlight']/a/img[@src='//prep-media.music-group.com/media/sys_master/images/hd9/ha7/8830306713630.jpg']]]></SpotLightImage3>
+</Creating_HomePage>
+ </Locators>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="All"
+	annotations="JDK">
+	<test name="All" junit="false"
+		preserve-order="true">
+		<classes>
+		
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2006" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2008" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2009" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2011" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2014" />
+		<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Ask_Question_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Brands_Product_Downloads_Page" />
+				<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Buy_Now" />
+				<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.BuyNow_StoreLocation" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_Home" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Product_Feature_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Product_Overview_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_238" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_319" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_320" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_321" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_322" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_323" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_324" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_325" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MidasTraining_OnlineTutorial" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_327" />
+						<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_Training_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Download_Center" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Enterprise_And_Entertainment" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MidasTraining_Schedule" />
+<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.JoinUS_HowWeLive" />
+<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.JoinUS_WhatWeDo" />
+	<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.WhatWeDo_LasVegasCareers" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.WhatWeDo_LosAngelesCareers" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.WhatWeDo_ZhongshanCareers" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_BecomePartner" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Klarkteknik_BecomePartner" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_BecomePartner" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_Partner_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Creation_HomePage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Home_Brand_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Install_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.LifeStyle_HomePage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Live_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_UnifiedBrandPage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_UnifiedGlobalSupport" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_Warranty_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_DownloadCenter" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MusicInstrument_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.NoResultPage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.PageNotFound" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Product_Discovery_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Production_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Store_Locator" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Unified_AuthorizedPartnerPagePopup" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Unified_OrderSpareParts" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Unified_SearchSuggestionPopup" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Warranty_Terms_Conditions" />
+				<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotMusicId" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotPasswordPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SiteMapPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_InActiveAccount" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_279" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_280" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_281" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_282" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_285" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_286" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ChangePassword" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_CheckOutPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_OrderDetailpage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_PlaceOrder_SingleProduct" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ProductDetailPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ProductReview" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_QuickViewCartBox" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_RegistraionPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SearchResultPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SearchSuggestion" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ShoppingCart" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SignInPage" />
+		
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_StoreAccountPopup" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_UploadCartPopup" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ViewAccountPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.Login_B2B" />
+			
+			
+		</classes>		
+	</test>
+</suite> 

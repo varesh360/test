@@ -1,0 +1,383 @@
+
+/*==============================================================================================================================
+ File Name    : B2B_ProductReview_Helper.java
+ ClassName    : B2B_ProductReview_Helper
+ Summary      : Contains automation scripts to login into B2B_ProductReview_Helper store.
+ ===============================================================================================================================
+ History      :   Company            Created By     
+                  360logica                         
+
+ ===============================================================================================================================
+ Remarks      :   Tests - 
+ ===============================================================================================================================*/
+
+package test.java.com.MusicGroup.pagehelper;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+public class B2B_ProductReview_Helper extends DriverHelper {
+	private LocatorReader locatorReader;
+
+	public B2B_ProductReview_Helper(WebDriver driver) {
+		super(driver);
+		locatorReader = new LocatorReader("B2B_ProductReview.xml");
+	
+	}
+	
+	//Click on First displayed prodict on B2BPage
+	public void clickonFirstProduct()
+	
+	{
+			
+		
+		String locator = locatorReader.getLocator("B2B_ProductReviewPage.ClickFirstProduct");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+	}
+	
+	
+	//Click on Write your own button
+		public void clickonreviewbutton()
+		
+		{
+				
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.ClickWritingYourOwnReviewbtn");
+			this.WaitForElementEnabled(locator, 50);
+			clickOn(locator);
+		}
+		
+		//Check Page not found
+		public void checkPageNotFound()
+		{
+			String actualTitle1 = driver.getTitle();
+			System.out.println("Get Titile"+ actualTitle1);
+			String expectedTitle1 = "Not Found | MUSIC Group";
+			Assert.assertFalse(actualTitle1==expectedTitle1);
+		
+		}
+	//Reach upto Midas Training  page(Midas)
+	public void ReachUptoProductReviewPage()
+	{
+		//Click on Cartlink on B2BPage
+		this.clickonFirstProduct();
+		//Click on Write your own button
+		this.clickonreviewbutton();
+
+		//Check page not found
+		this.checkPageNotFound();
+		
+	}
+	public void verifyProductReviewPage(String VSpace1Height, String vSpace4Height, String vSpace14Height, String vSpace3Height, String vSpace9Height, String Gutter86width, String Gap17Width, String vSpace12Height, String Gutter8Width, String vSpace15Height)
+	{
+		
+		ReachUptoProductReviewPage();
+		int count = 0;
+		// Verify vSpace1Height has the height of 70px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace1heightlocator");
+			String padding_top = this.getCSS(locator, "padding-top");
+			System.out.println("Actual Result: " + padding_top);
+			Assert.assertEquals(VSpace1Height,padding_top);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace1Height Exception>>Expected Pading Top:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Padding:70px");
+			count = count + 1;
+		}
+		// Verify vSpace4Height has the height of 40px .
+				
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vspace4heightlocator");
+			String margin_bottom = this.getCSS(locator, "margin-bottom");
+			System.out.println("Actual Result: " + margin_bottom);
+			Assert.assertEquals(vSpace4Height,margin_bottom);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace4Height Exception>>Expected Margin Bottom:40px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Margin Bottom:40px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace14Height has the height of 10px .
+		
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace14heightlocator");
+			String margin_top = this.getCSS(locator, "margin-top");
+			System.out.println("Actual Result: " + margin_top);
+			Assert.assertEquals(vSpace14Height,margin_top);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace14Height Exception>>Expected Margin:10px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace14Height Error>>Expected Margin :10px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace3Height has the height of 10px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace3Heightlocator1");
+		   String margin_bottom = this.getCSS(locator, "margin-bottom");
+			System.out.println("Actual Result: " +margin_bottom);
+			Assert.assertEquals(vSpace3Height,margin_bottom);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace3Height Exception>>Expected Margin:50px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace3Height Error>>Expected Margin :50px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace9Height has the height of 17px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vspace19hightinput");
+		    String height = this.getCSS(locator, "height");
+			String locator1 = locatorReader.getLocator("B2B_ProductReviewPage.vspace19height1");
+			String height2 = this.getCSS(locator1, "height");
+			String height_wopx = height.substring(0, 2);
+			String height1_wopx = height2.substring(0, 2);
+			int getsubpixel = Integer.parseInt(height1_wopx)- Integer.parseInt(height_wopx);
+			String getfinalValue=getsubpixel+"px";
+			System.out.println("Actual Result: " + getfinalValue);
+			Assert.assertEquals(vSpace9Height,getfinalValue);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace9Height Exception>>Expected Margin:17px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace9Height Error>>Expected Margin :17px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace9Height has the height of 17px (Second Col).
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vspace19hightinput2");
+		    String height = this.getCSS(locator, "height");
+			String locator1 = locatorReader.getLocator("B2B_ProductReviewPage.vspace19height1loc2");
+			String height2 = this.getCSS(locator1, "height");
+			String height_wopx = height.substring(0, 2);
+			String height1_wopx = height2.substring(0, 2);
+			int getsubpixel = Integer.parseInt(height1_wopx)- Integer.parseInt(height_wopx);
+			String getfinalValue=getsubpixel+"px";
+			System.out.println("Actual Result: " + getfinalValue);
+			Assert.assertEquals(vSpace9Height,getfinalValue);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace9Height Exception>>Expected Margin:17px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace9Height Error>>Expected Margin :17px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace3Height has the height of 50px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vspace3locatorabovereview");
+		    String height = this.getCSS(locator, "height");
+			String locator1 = locatorReader.getLocator("B2B_ProductReviewPage.vspace3locatorabovereview1");
+			String height2 = this.getCSS(locator1, "margin-top");
+			String height_wopx = height.substring(0, 2);
+			String height1_wopx = height2.substring(0, 2);
+			int getsubpixel = Integer.parseInt(height1_wopx)+ Integer.parseInt(height_wopx);
+			String getfinalValue=getsubpixel+"px";
+			System.out.println("Actual Result: " + getfinalValue);
+			Assert.assertEquals(vSpace9Height,getfinalValue);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace3Height Exception>>Expected Margin:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace3Height Error>>Expected Margin :70px");
+			count = count + 1;
+		}
+		
+		// Verify Gutter86Width has the height of 130px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.gutter86width");
+		    String margin_left = this.getCSS(locator, "margin-left");
+		    System.out.println("Actual Result: " + margin_left);
+			Assert.assertEquals(Gutter86width,margin_left);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review Gutter86Width Exception>>Expected Margin:130px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review Gutter86Width Error>>Expected Margin :130px");
+			count = count + 1;
+		}	
+		
+		// Verify Gutter17Width has the height of 10px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.gap17width");
+		    String margin_left = this.getCSS(locator, "margin-left");
+		    System.out.println("Actual Result: " + margin_left);
+			Assert.assertEquals(Gap17Width,margin_left);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review gap17width Exception>>Expected Margin:10px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review gap17width Error>>Expected Margin :10px");
+			count = count + 1;
+		}
+		// Verify Gutter17Width has the height of 10px (Submit).
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.gap17widthsubmit");
+		    String margin_left = this.getCSS(locator, "margin-left");
+		    System.out.println("Actual Result: " + margin_left);
+			Assert.assertEquals(Gap17Width,margin_left);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review gap17width Exception>>Expected Margin:10px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review gap17width Error>>Expected Margin :10px");
+			count = count + 1;
+		}
+		// Verify vSpace1Height has the height of 70px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.Vspace1HeightbelowSave");
+		    String margin_bottom = this.getCSS(locator, "margin-bottom");
+		    System.out.println("Actual Result: " + margin_bottom);
+			Assert.assertEquals(VSpace1Height,margin_bottom);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace1Height Exception>>Expected Margin:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace1Height Error>>Expected Margin :70px");
+			count = count + 1;
+		}
+		// Verify vSpace12Height has the height of 35px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace12Heightlocator");
+		    String padding_top = this.getCSS(locator, "padding-top");
+		    System.out.println("Actual Result: " + padding_top);
+			Assert.assertEquals(vSpace12Height,padding_top);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace12Height Exception>>Expected Margin:35px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace12Height Error>>Expected Margin :35px");
+			count = count + 1;
+		}	
+		
+		// Verify vSpace12Height has the height of 35px(padding bottom) .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace12Heightlocator");
+		    String padding_bottom = this.getCSS(locator, "padding-bottom");
+		    System.out.println("Actual Result: " + padding_bottom);
+			Assert.assertEquals(vSpace12Height,padding_bottom);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace12Height Exception>>Expected Margin:35px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace12Height Error>>Expected Margin :35px");
+			count = count + 1;
+		}	
+		// Verify gutter8Width has the height of 40px(Right) .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.gutter8Width");
+		    String padding_right = this.getCSS(locator, "padding-right");
+		    System.out.println("Actual Result: " + padding_right);
+			Assert.assertEquals(Gutter8Width,padding_right);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review gutter8Width Exception>>Expected Margin:40px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review gutter8Width Error>>Expected Margin :40px");
+			count = count + 1;
+		}
+		
+		// Verify gutter8Width has the height of 40px(Right) .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.gutter8Width");
+		    String padding_left = this.getCSS(locator, "padding-left");
+		    System.out.println("Actual Result: " + padding_left);
+			Assert.assertEquals(Gutter8Width,padding_left);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review gutter8Width Exception>>Expected Margin:40px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review gutter8Width Error>>Expected Margin :40px");
+			count = count + 1;
+		}
+		// Verify vSpace1Height footer has the height of 70px(Right) .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace1Heightfooter");
+		    String padding_bottom = this.getCSS(locator, "padding-bottom");
+		    
+		    String locator1 = locatorReader.getLocator("B2B_ProductReviewPage.vspace1Hieghtfooter1");
+		    String margin_top = this.getCSS(locator1, "margin-top");
+		    
+		    String padding_bottom_wopx = padding_bottom.substring(0, 2);
+			String margin_top_wopx = margin_top.substring(0, 2);
+			int getsubpixel = Integer.parseInt(padding_bottom_wopx)+ Integer.parseInt(margin_top_wopx);
+			
+			String getfinalValue=getsubpixel+"px";
+			 System.out.println("Actual Result: " +   getfinalValue);
+			Assert.assertEquals(VSpace1Height,getfinalValue);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review gutter8Width Exception>>Expected Margin:40px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review gutter8Width Error>>Expected Margin :40px");
+			count = count + 1;
+		}
+		
+		// Verify vSpace15Locator has the height of 25px .
+		try {
+			String locator = locatorReader.getLocator("B2B_ProductReviewPage.vSpace15Locator");
+		    String padding_top = this.getCSS(locator, "padding-top");
+		    System.out.println("Actual Result: " +   padding_top);
+			Assert.assertEquals(vSpace15Height,padding_top);
+		}
+
+		catch (Exception ex) {
+			System.out.println("B2B Product review vSpace15Locator Exception>>Expected Margin:25px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("B2B Product review vSpace15Locator Error>>Expected Margin :25px");
+			count = count + 1;
+		}
+		System.out.println("count value is :::" + count);
+		Assert.assertTrue(count == 0);
+	
+	}
+	
+	
+	
+		
+}
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="Discovery_Page"
+	annotations="JDK">
+	<test name="Discovery_Page" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Product_Discovery_Page" />
+		</classes>		
+	</test>
+</suite> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="SHMCP_2054"
+	annotations="JDK">
+	<test name="SHMCP_2054" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMCP_2054" />
+		</classes>		
+	</test>
+</suite> 

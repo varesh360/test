@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="SHMEP_238"
+	annotations="JDK">
+	<test name="SHMEP_238" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.SHMEP_238" />
+		</classes>		
+	</test>
+</suite> 

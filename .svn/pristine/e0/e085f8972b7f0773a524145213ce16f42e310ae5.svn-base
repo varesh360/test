@@ -1,0 +1,343 @@
+package test.java.com.MusicGroup.pagehelper;
+import org.openqa.selenium.WebDriver;
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.ss.usermodel.Row;
+
+import com.atlassian.jira.rpc.soap.client.RemoteComment;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.gargoylesoftware.htmlunit.javascript.host.URL;
+import com.gargoylesoftware.htmlunit.javascript.host.geo.Coordinates;
+import com.dolby.jira.net.soap.jira.RemoteProject;
+import com.atlassian.jira.rpc.soap.client.RemoteIssue;
+import com.dolby.jira.net.soap.jira.RemoteServerInfo;
+
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+
+import test.java.com.MusicGroup.util.ExecutionLog;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.rhq.core.domain.configuration.Configuration;
+
+import com.atlassian.jira.rpc.soap.*;
+import com.atlassian.jira.rpc.soap.client.JiraSoapServiceServiceLocator;
+import com.atlassian.jira.rpc.soap.client.JiraSoapService;
+import com.atlassian.jira.rpc.soap.client.RemoteAuthenticationException;
+import com.atlassian.jira.rpc.soap.client.RemoteComponent;
+import com.atlassian.jira.rpc.soap.client.RemoteFilter;
+import com.atlassian.jira.rpc.soap.client.RemotePermissionException;
+import com.atlassian.jira.rpc.soap.client.RemoteValidationException;
+import com.atlassian.jira.rpc.soap.client.RemoteVersion;
+import org.openqa.selenium.JavascriptExecutor;
+//For Date and Time
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class VerifiBrokenImageonProduction_Helper extends DriverHelper {
+	private LocatorReader locatorReader;	
+	private JiraSoapServiceServiceLocator l;
+	public static final String WS_ENDPOINT = "/rpc/soap/jirasoapservice-v2";
+
+    private String user="surya.kant";
+    private String password="360Logica8932";
+    private String url="https://jira.music-group.com/";
+    private String id=null;
+    private String token;
+    private JiraSoapService jiraAccess;
+    static final String PROJECT_KEY = "SHMEP";
+       
+	static final String ISSUE_TYPE = "1";
+	static final String PRIORITY_ID = "2";
+	//static final String COMPONENT_ID = "10240";
+    
+    private Map<String, RemoteProject> projectMap = new HashMap<String, RemoteProject>();
+    private Map<String, List<RemoteFilter>> filters = new HashMap<String, List<RemoteFilter>>();
+	private String Author="dushyant.sharma@360logica.com";
+	//private String jiraIssueAssignee = "dushyant.sharma@360logica.com";
+	private String jiraIssueAssignee = "Surya Kant";  
+	private String jiraAssignee="assignee";
+	private String sData=null;
+	public int count = 0;
+	public String getURL;
+	public String getData;
+	public String GetModelName;
+	public String GetPageType;
+	public RemoteComment rc;
+	
+	public VerifiBrokenImageonProduction_Helper(WebDriver driver)
+	{
+		super(driver);
+		locatorReader = new LocatorReader("VerifyImageOnProductPage.xml");
+	}
+	
+	public String DateandTime(){
+		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss a");
+		
+		 //get current date time with Date()
+		 Date date = new Date();
+		 
+		 // Now format the date
+		 String date1= dateFormat.format(date).toString();
+		 return date1;
+	}
+	public void ReadExcelFile(String filePath,String fileName,String sheetName, String ImageStatus) throws IOException {
+		
+		String IssueID=this.CreateJiraTicket();
+		System.out.println("RemoteIssue"+IssueID);
+		updateJiraComment(IssueID, getURL,GetPageType,GetModelName);
+		FileInputStream file = new FileInputStream(new File(filePath+"\\"+fileName));
+		System.out.println("File is"+file);
+		 
+		//Get the workbook instance for XLS file 
+		HSSFWorkbook  workbook1 = new HSSFWorkbook(file);
+		HSSFSheet sheet = workbook1.getSheetAt(0);
+		int LastRowOFSheet=sheet.getLastRowNum();
+		 
+	    System.out.println("RowNumber"+LastRowOFSheet);
+	    int rowcount=sheet.getLastRowNum()-sheet.getFirstRowNum();
+	    //for(int i=0;i<=rowcount+1;i++){
+	    for(int i=0;i<=2;i++){
+	    	Row row=sheet.getRow(i);
+	   	 	String getURL=row.getCell(0).getStringCellValue();
+	   	 	System.out.println("GetURL"+getURL);
+	   	 	driver.navigate().to(getURL);
+	   	 	System.out.println("URL for Navigation"+getURL);
+	   	 	String GetModelName=row.getCell(1).getStringCellValue();
+	   	 	String GetPageType=row.getCell(2).getStringCellValue();
+	    	int LastCols=row.getLastCellNum();
+		    for(int j=3;j<LastCols;j++){
+		    	String getData=row.getCell(j).getStringCellValue(); 	 
+				this.verifyOverviewPage(ImageStatus,getURL,getData,GetModelName, GetPageType, IssueID, filePath,  fileName,  sheetName);
+		    }
+	    }
+	   // this.updateComment(rc, IssueID);
+	}
+	
+	public String getToken(){
+		if (token == null) {
+			try {
+					System.out.println("URl is"+url);
+					System.out.println("GetToken Successfully");
+			    	JiraSoapServiceServiceLocator l = new JiraSoapServiceServiceLocator();
+				    l.setJirasoapserviceV2EndpointAddress(url + WS_ENDPOINT);
+			    	//jiraAccess = l.getJirasoapserviceV2();
+			    	jiraAccess=l.getJirasoapserviceV2();
+		        	System.out.println("URl is"+url);
+		        	token =jiraAccess.login(user, password);
+		     } catch (RemoteAuthenticationException  e) {
+		    	 		System.err.println("ERROR: Unable to connect to the Jira server!");
+		    	 		e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+		    	 	} catch (RemoteException e) {
+		    	 			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+		    	 		} catch (javax.xml.rpc.ServiceException e) {
+		    	 				e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+		    	 			}
+			}
+			return token;
+	 }
+
+	public void SetJiraId(String id){
+		getToken();
+		String IssueID=new String(id);
+		System.out.println("JirsTestID:="+IssueID);
+		//Reporter.log("<a href=\"https://jira.music-group.com/secure/CreateIssue!default.jspa\">Open New Jira Issue Here</a>");
+		 System.out.println("<a href=\"https://jira.music-group.com/browse/"+IssueID+"\">\""+IssueID+" \"</a>");
+		
+	}
+	
+	public boolean updateJiraComment(String IssueID,String getURL,String GetPageType,String GetModelName){
+		//this.getToken();
+		this.SetJiraId(IssueID);
+		RemoteComment rc = new RemoteComment();
+		RemoteFilter rm=new RemoteFilter();
+		RemoteIssue issue = new RemoteIssue();
+	     if (null!= rc){
+	    	 
+	    	 rc.setAuthor(Author);
+	    	String DTTime=this.DateandTime();
+	    	String[] time=DTTime.split(" ");
+	    	System.out.println("Date is"+time[0]);
+	    	System.out.println("Time is"+time[1]);
+	    	rc.setBody("This Testcase was executed on "+time[0]+" and Time was "+time[1]+"\n ||Page||Error||");
+	    	 //rc.setBody(DTTime+"\n ||Page||Error||");
+	    	 issue.setAssignee(this.jiraIssueAssignee);
+	    
+	    	 
+	 		
+	 		  if (this.jiraAccess != null){
+	 			  try{
+	 				  if (null == getToken()){
+	 					  System.err.println("addJiraCommentToIssue: Jira not authenticated? token is Null");
+	 					   return false;
+	 					  
+	 				  }
+	 				  String token1=getToken();
+	 				  System.out.println("Token is"+token1);
+	 			this.jiraAccess.addComment(token1, IssueID,rc);
+	 			int ID=Integer.parseInt(IssueID);
+	 			//int msgLength=jiraAccess.getComment(token1, ID).Length-1;
+	 			//RemoteComment comment=jiraAccess.getComment(token1, ID);
+	 			//System.out.println("Comment is"+comment);
+	 			//String comm = comm + "__!"; // last comment body change 
+	 			//this.jiraAccess.editComment(token1, "Hi");
+	 				  System.out.println("addJiraCommentToIssue: Completed adding Comment to: " + IssueID);
+	 			  }
+	 			  catch (Exception e) {
+	 				  System.err.println("RemotePermissionException: Failed adding Comment to: " + IssueID);
+	 				  return false;
+	 			  }
+	 			
+	 			 
+
+	}
+	     }
+	     return true;
+
+	}
+	public String CreateJiraTicket()throws RemotePermissionException,
+	RemoteValidationException, RemoteAuthenticationException, com.atlassian.jira.rpc.soap.client.RemoteException, RemoteException{
+		getToken();
+
+		//this.SetJiraId(jiraTestID);
+		//RemoteIssue issue = createIssue(jiraAccess, Token2);
+		RemoteComment rc = new RemoteComment();
+		RemoteFilter rm=new RemoteFilter();
+		RemoteIssue issue = new RemoteIssue();
+
+		issue.setProject(PROJECT_KEY);
+		issue.setType(ISSUE_TYPE);
+		
+		issue.setAssignee("Surya.Kant");
+		issue.setSummary("Production Missing Content ");
+		issue.setDescription("Production Missing Content");
+
+		issue.setPriority(PRIORITY_ID);
+		RemoteComponent component = new RemoteComponent();
+		//component.setId(COMPONENT_ID);
+		RemoteIssue createdIssue = jiraAccess.createIssue(getToken(), issue);
+		
+		String Issue=createdIssue.getKey();
+		return Issue;
+	}
+	public RemoteComment[] printComments(String IssueID) throws RemoteException {
+		String token=this.getToken();
+		RemoteComment[] comments = jiraAccess.getComments(token, IssueID);
+		for (RemoteComment remoteComment : comments) {
+			System.out.println("Comment:" + remoteComment.getBody());
+		}
+		return comments;
+		
+	}
+
+	public void editComment(RemoteComment comment, String getURL, String GetModelName, String GetPageType )throws RemoteException{
+		String token1=this.getToken();
+		if (jiraAccess.hasPermissionToEditComment(token1, comment)) {
+			String remoteCom=comment.getBody();
+			comment.setBody(remoteCom + "\n  |"+getURL+"|Missing Image for product "+GetModelName+" on "+GetPageType+"|");
+			comment.setGroupLevel(null); // Make it visible to all
+
+			jiraAccess.editComment(token1, comment);
+			System.out.println("Updated!");
+		}
+	}
+	//Verify Product Overview page
+	public void verifyOverviewPage(String ImageStatus, String getURL, String getData, String GetModelName, String GetPageType, String IssueID, String filePath, String fileName, String sheetName) throws IOException
+	{
+		 try{
+			 
+		 
+		//Reach upto Product Overview page(Bugera)
+		//ReachUptoOverviewPage();
+		int count = 0;
+		 
+		
+		 
+		//Verify Image1
+		try{
+			
+			
+			boolean ActualImageStatus=this.imageVerify(getData);
+			String ActualStatus=Boolean.toString(ActualImageStatus);
+			System.out.println("Actual Image Status"+ActualStatus);
+			if(ActualStatus=="false"){
+				
+				RemoteComment[] comment1=this.printComments(IssueID);
+				this.editComment(comment1[0],getURL,GetModelName,GetPageType);
+			
+			 			 
+}
+		}
+
+		catch (Exception ex)  {
+			//String dataToWrite="1 Image is not Displayed on Product Page Test11";
+			System.out.println("Image is not Displayed on Product Page");
+			//this.writeExcel("E:/Test","TestResult1.xls", "Test", dataToWrite);
+			count = count + 1;
+		} catch (Error ex) {
+			//String dataToWrite="1 Image is not Displayed on Product Page";
+			//this.writeExcel("E:/Test", "TestResult1.xls", "Test", dataToWrite);
+			System.out.println("Image is not displayed ");
+		}
+		 }
+				 catch (Exception ex){
+			 System.out.println("URL is not Navigate on Product Page");
+		 }
+		
+	}
+	public boolean imageVerify(String getData){
+		boolean result=false;
+		try {
+			
+			//By by;
+			
+			//JavascriptExecutor je = (JavascriptExecutor) driver;  
+		//	WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(ByLocator(locator)));
+			 //WebElement Result1=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src, '"+getData+"' )]")));
+			
+			// je.executeScript(“arguments[0].scrollIntoView("true");”, Result1);
+			// WebElement Result1=driver.findElement(By.xpath("//img[contains(@src, '"+getData+"' )]"));
+			
+			 //Coordinates coordinate = ((Locatable)Result1).getCoordinates(); 
+			 //coordinate.onPage(); 
+			 //coordinate.inViewPort();
+			((JavascriptExecutor) driver).executeScript(
+	                "arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//img[contains(@src, '"+getData+"' )]")));
+			 WebElement Result1 = driver.findElement(By.xpath("//img[contains(@src, '"+getData+"' )]"));
+				
+				 System.out.println("GetData"+Result1);
+				 result=true;
+			// js.executeScript("window.scrollByLines(40)");
+		}
+		catch (Exception ex)  {
+			String dataToWrite="1 Image is not Displayed on Product Page";
+			System.out.println("Image is not Displayed on Product Page");
+			//this.writeExcel("E:/Test","TestResult1.xls", "Test", dataToWrite);
+			count = count + 1;
+		} catch (Error ex) {
+			String dataToWrite="1 Image is not Displayed on Product Page";
+			//this.writeExcel("E:/Test", "TestResult1.xls", "Test", dataToWrite);
+			
+			count = count + 1;
+		}
+		return result;
+		}
+
+
+		}

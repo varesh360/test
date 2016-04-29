@@ -1,0 +1,10 @@
+
+*****************************************************************************
+Apr 14,2016 11:55:04 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 14,2016 11:55:16 [info]  Navigated to B2B store successfully.
+
+*****************************************************************************
+Apr 14,2016 11:57:32 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.B2BTestCases.VerifyB2B_UploadProductList and Test method VerifyProductUploadList
+*****************************************************************************
+Apr 14,2016 11:57:47 [info]  Navigated to B2B store successfully.

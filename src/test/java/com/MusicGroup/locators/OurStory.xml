@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locators>
+<OurStory>
+   <ClickToggleMenu><![CDATA[//i[@class='icon-menu icon-menu-login']]]></ClickToggleMenu>
+       <ClickMidasBrand><![CDATA[//a[@class='brand-midas']]]></ClickMidasBrand>
+       <ClickOurStoryMenu><![CDATA[//a[contains(text(),'Our Story')]]]></ClickOurStoryMenu>
+          
+         <ClickOurStory1998image><![CDATA[//li[@class='img-seperate-block col-md-2 mTSThumbContainer'][1]/a]]></ClickOurStory1998image>
+         <MouseOverOnMidas1970OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '< 1971 ')]]]></MouseOverOnMidas1970OurStory>
+         <ClickOnMidas1970OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1971?active=Our story']]]></ClickOnMidas1970OurStory>
+         <MouseOveron1974OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1974>')]]]></MouseOveron1974OurStory>
+          <ClickOnMidas1974OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1974?active=Our story']]]></ClickOnMidas1974OurStory>
+          <MouseOverOnMidas1980OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1980 >')]]]></MouseOverOnMidas1980OurStory>
+          <ClickOnMidas1980OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1980?active=Our story']]]></ClickOnMidas1980OurStory>
+           <MouseOverOnMidas1986OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1986 >')]]]></MouseOverOnMidas1986OurStory>
+          <ClickOnMidas1986OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1986?active=Our story']]]></ClickOnMidas1986OurStory>
+           <MouseOverOnMidas1987OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1987 >')]]]></MouseOverOnMidas1987OurStory>
+          <ClickOnMidas1987OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1987?active=Our story']]]></ClickOnMidas1987OurStory>
+          <MouseOverOnMidas1990OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1990 >')]]]></MouseOverOnMidas1990OurStory>
+          <ClickOnMidas1990OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1990?active=Our story']]]></ClickOnMidas1990OurStory>
+          <MouseOverOnMidas1995OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1995 >')]]]></MouseOverOnMidas1995OurStory>
+          <ClickOnMidas1995OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1995?active=Our story']]]></ClickOnMidas1995OurStory>
+          <MouseOverOnMidas1996OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1996 >')]]]></MouseOverOnMidas1996OurStory>
+          <ClickOnMidas1996OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1996?active=Our story']]]></ClickOnMidas1996OurStory>
+          <MouseOverOnMidas1998OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '1998 >')]]]></MouseOverOnMidas1998OurStory>
+          <ClickOnMidas1998OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/1998?active=Our story']]]></ClickOnMidas1998OurStory>
+           <MouseOverOnMidas2002OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2002 >')]]]></MouseOverOnMidas2002OurStory>
+          <ClickOnMidas2002OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2002?active=Our story']]]></ClickOnMidas2002OurStory>
+           <MouseOverOnMidas2003OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2003 >')]]]></MouseOverOnMidas2003OurStory>
+          <ClickOnMidas2003OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2003?active=Our story']]]></ClickOnMidas2003OurStory>
+              <MouseOverOnMidas2004OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2004 >')]]]></MouseOverOnMidas2004OurStory>
+          <ClickOnMidas2004OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2004?active=Our story']]]></ClickOnMidas2004OurStory>
+             <MouseOverOnMidas2006OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2006 >')]]]></MouseOverOnMidas2006OurStory>
+          <ClickOnMidas2006OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2006?active=Our story']]]></ClickOnMidas2006OurStory>
+          <MouseOverOnMidas2008OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2008 >')]]]></MouseOverOnMidas2008OurStory>
+          <ClickOnMidas2008OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2008?active=Our story']]]></ClickOnMidas2008OurStory>
+          <MouseOverOnMidas2009OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2009 >')]]]></MouseOverOnMidas2009OurStory>
+          <ClickOnMidas2009OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2009?active=Our story']]]></ClickOnMidas2009OurStory>
+          <MouseOverOnMidas2011OurStory><![CDATA[//div[@class='followingYearLink']/span[contains(text(), '2011 >')]]]></MouseOverOnMidas2011OurStory>
+          <ClickOnMidas2011OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2011?active=Our story']]]></ClickOnMidas2011OurStory>
+          <MouseOverOnMidas2014OurStory><![CDATA[//span[contains(text(),'2014')]]]></MouseOverOnMidas2014OurStory>
+          <ClickOnMidas2014OurStory><![CDATA[//div[@class='followYearBanner']/a[@href='/brand/midas/ourstory/2014?active=Our story']]]></ClickOnMidas2014OurStory>
+</OurStory>
+</Locators>

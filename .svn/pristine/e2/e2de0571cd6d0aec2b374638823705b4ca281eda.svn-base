@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="B2B"
+	annotations="JDK">
+	<test name="B2B" junit="false"
+		preserve-order="true">
+		<classes>
+			
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotMusicId" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ForgotPasswordPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SiteMapPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_InActiveAccount" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_279" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_280" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_281" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_282" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_285" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.SHMEP_286" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ChangePassword" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_CheckOutPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_OrderDetailpage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_PlaceOrder_SingleProduct" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ProductDetailPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ProductReview" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_QuickViewCartBox" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_RegistraionPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SearchResultPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SearchSuggestion" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ShoppingCart" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SignInPage" />
+					<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_StoreAccountPopup" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_UploadCartPopup" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_ViewAccountPage" />
+			<class name="test.java.com.MusicGroup.scripts.B2BTestCases.Login_B2B" />
+			
+		</classes>		
+	</test>
+</suite> 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="CrossTest3"
+	annotations="JDK">
+	<test name="CrossTest3" junit="false"
+		preserve-order="true">
+		<classes>
+		
+		 <class name="test.java.com.MusicGroup.scripts.B2BTestCases.B2B_SearchResultPage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Creation_HomePage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Home_Brand_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Install_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.LifeStyle_HomePage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Live_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MusicInstrument_Page" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.PerformanceInstalled" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_UnifiedBrandPage" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.MG_UnifiedGlobalSupport" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Production_Page" />
+			
+			
+						
+		</classes>		
+	</test>
+</suite> 

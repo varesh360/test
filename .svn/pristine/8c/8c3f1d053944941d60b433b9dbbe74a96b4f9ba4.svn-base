@@ -1,0 +1,180 @@
+package test.java.com.MusicGroup.pagehelper;
+/*
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import com.sun.tools.javac.util.List;
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+*/
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+import org.testng.Assert;
+
+import java.awt.Desktop.Action;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+
+public class VerifyProductOverviewFunctionality_helper  extends DriverHelper
+{
+	private LocatorReader locatorReader;	
+
+	public VerifyProductOverviewFunctionality_helper(WebDriver driver)
+	{
+		super(driver);
+		locatorReader = new LocatorReader("VerifyProductOverViewPageFunctionality.xml");
+	}
+	public void clickSearchbox()
+	{
+	
+		String locator = locatorReader.getLocator("ProductOverViewPage.SerachField");
+		this.WaitForElementEnabled(locator, 50);
+		String val = "X32";
+		sendKeys(locator, val);
+		presEnterKey(locator);
+		
+		
+	}
+	public void clicklearnmore()
+	{
+	
+		String locator = locatorReader.getLocator("ProductOverViewPage.ClickLearnMore");
+		this.WaitForElementEnabled(locator, 50);
+		clickOn(locator);
+		
+		
+	}
+	
+	//Check Page not found
+	public void checkPageNotFound()
+	{
+		String actualTitle1 = driver.getTitle();
+		System.out.println("Get Titile"+ actualTitle1);
+		String expectedTitle1 = "Not Found | MUSIC Group";
+		Assert.assertFalse(actualTitle1==expectedTitle1);
+
+		
+	}
+	//Click on OurStory1970
+			public void ClickoNLearMoreOnProductOveriewScreen(String displaytext) throws InterruptedException
+			{
+				
+				String locator = locatorReader.getLocator("ProductOverViewPage.ClickLearnMoreonProductOverview");
+				this.WaitForElementEnabled(locator, 50);
+				clickOn(locator);
+				Thread.sleep(6000);
+			}
+	//Reach upto ReachUptoOurStoryPage(Midas)
+	public void ReachUptoOurStoryPage()
+	{
+		
+		//Click on the Menu icon
+				this.clickSearchbox();
+				this.clicklearnmore();
+			//	Check page not found
+				this.checkPageNotFound();
+				
+	/*	//Click on the Menu icon
+		this.clickMenuIcon();
+		//Click on a brand
+		this.clickonBrandMidas();
+		//Click on Buy Now
+		this.clickOurStory();
+		
+		//Click our Story 1970
+		this.clickOurStory1970();
+		Check page not found
+		this.checkPageNotFound();
+	*/}
+	
+	//Verify Buy Now page
+	public void VerifyProductOverview_Functionality(String vSpace1Height, String TextSpace8Height, String TextSpace6Height, String vSpace4Height, String Gutter16Width, String FullWidthBoxImage33, String FullWidthBoxImage6, String BodayCopyLeadingHeight)throws InterruptedException
+	{
+		//Reach upto Buy Now page(Behringer)
+		ReachUptoOurStoryPage();
+		
+		int count = 0;
+		try {
+			Thread.sleep(6000);
+			String locator = locatorReader.getLocator("ProductOverViewPage.textbeforelearmore");
+			String displaytext=this.getText(locator);
+			System.out.println("---Displayed text---"+displaytext);
+			//this.ClickoNLearMoreOnProductOveriewScreen(displaytext);
+			 //driver.navigate().back();
+			
+			
+		}
+
+		catch (Exception ex) {
+			System.out.println("Midas OurStory 2002 vSpace1Height Exception>>Expected Margin Top:70px");
+			count = count + 1;
+		} catch (Error ex) {
+			System.out.println("Midas OurStory 2002 vSpace1Height Error>>Expected Width:70px");
+			count = count + 1;
+		}
+		try{
+			String StrText="Learn more…";
+		
+			//List<WebElement> no = driver.findElements(By.xpath("//a[contains(text(),'Learn more…')]"));
+			List<WebElement> no = driver.findElements(By.linkText("Learn more…"));
+			String number=locatorReader.getLocator("ProductOverViewPage.textbeforelearmore");
+			
+			int nooflinks = no.size(); 
+			System.out.println(nooflinks);
+		//	for (WebElement pagelink : no)
+			for(int i=0;i<nooflinks;i++)
+			{ 
+				System.out.println("All Links"+no.get(i).getAttribute("href"));
+				//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", );
+				//Actions actions=new Actions(driver);
+				//actions.moveToElement(pagelink);
+				//actions.perform();
+				//String GetData=pagelink.toString();
+				//String linktext = pagelink.getText();
+				//System.out.println("PageLink"+pagelink);
+			//	System.out.println("LinkText:"+linktext);
+				
+		//	pagelink.click();
+				Thread.sleep(6000);
+				String actualTitle1 = driver.getTitle();
+				System.out.println("Get Titile"+ actualTitle1);
+				
+			//	WebElement el=driver.findElement(By.xpath("//div[@class='shortcontent']/p"));
+			//	String strText=el.getText();
+				//System.out.println("GetText after result"+strText);
+		//	Assert.assertEquals(linktext, strText);
+			//driver.navigate().back();
+			Thread.sleep(6000);
+		//	System.out.println(pagelink);
+			//	String link = pagelink.getAttribute("href"); 
+				
+			//	String linkText=getText(link);
+				//System.out.println(link+" ->"); 
+			//	System.out.println(link);
+				//System.out.println("TestDatais"+linkText);
+				}
+			}catch (Exception e){ System.out.println("error "+e);
+			} 
+		
+			
+		// Verify vSpace1Height has the height of 70px.
+		
+		
+		
+
+				//Verify the final result
+		System.out.println("count value is :::" + count);
+		Assert.assertTrue(count==0);	
+	
+}
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossTest]">
+  <test name="CrossTest(failed)">
+    <classes>
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyMidas_OurStory1996Page"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002">
+        <methods>
+          <include name="verifyMidas_OurStory2002Page"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974 -->
+    </classes>
+  </test> <!-- CrossTest(failed) -->
+</suite> <!-- Failed suite [CrossTest] -->

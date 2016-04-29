@@ -1,0 +1,39 @@
+package test.java.com.MusicGroup.scripts.UnifiedTestCases;
+
+import org.testng.annotations.Test;
+
+import test.java.com.MusicGroup.pagehelper.Install_Page_Helper;
+import test.java.com.MusicGroup.util.DriverTestCase;
+import test.java.com.MusicGroup.util.ExecutionLog;
+
+public class Install_Page extends DriverTestCase
+{
+	@Test
+	public void InstallHomePage() throws Exception {
+		try {
+			install_Page_Helper = new Install_Page_Helper(driver);
+			ExecutionLog.LogAddClass(this.getClass().getName()+ " and Test method "+ Thread.currentThread().getStackTrace()[1].getMethodName());
+			String HomeBillboardWidth = propertyReader.readApplicationFile("HomeBillboardImageWidth_InstallPage");	
+			String HomeBillboardHeight = propertyReader.readApplicationFile("HomeBillboardImageHeight_InstalPage");
+			String LineDivider = propertyReader.readApplicationFile("LineDivider_InstallPage");
+			String SpotLightImageWidthB = propertyReader.readApplicationFile("SpotLightImageWidthB_InstallPage1");
+			String SpotLightImageHeightB= propertyReader.readApplicationFile("SpotLightImageHeightB_InstallPage");
+			String SpotLightImageWidthC = propertyReader.readApplicationFile("SpotLightImageWidthC_InstallPage");
+			String SpotLightImageHeightC= propertyReader.readApplicationFile("SpotLightImageHeightC_InstallPage");
+			
+			install_Page_Helper.verifyinstallHomepage(HomeBillboardWidth,HomeBillboardHeight,LineDivider,SpotLightImageWidthB,SpotLightImageHeightB,SpotLightImageWidthC,SpotLightImageHeightC);
+		}
+		catch (Error e) 
+		{
+			captureScreenshot("Install Page");
+			ExecutionLog.LogErrorMessage(e);
+			throw e;
+		} 
+		catch (Exception ex)
+		{
+			captureScreenshot("Install Page");
+			ExecutionLog.LogExceptionMessage(ex);
+			throw ex;
+		}
+	}
+}

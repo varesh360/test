@@ -1,0 +1,290 @@
+package test.java.com.MusicGroup.pagehelper;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+
+
+
+
+
+
+
+
+import test.java.com.MusicGroup.locators.LocatorReader;
+import test.java.com.MusicGroup.util.DriverHelper;
+
+public class VerifyB2B_UploadProductList_Helper extends DriverHelper {
+	private LocatorReader locatorReader;	
+	int count=0;
+	//String ExpectedResult="true"; 
+	public VerifyB2B_UploadProductList_Helper(WebDriver driver)
+	{
+		super(driver);
+		locatorReader = new LocatorReader("VerifyB2B_UploadProductList.xml");
+	}
+	public void VerifyB2BLoginPage(String B2BUser,String password,String ExpectedResult) throws InterruptedException{
+		//Verify Logo On Login Page
+		try{
+			String Locator=locatorReader.getLocator("LoginPage.VerifyLogoOnLogin");
+			this.WaitForElementVisible(Locator,10);
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+		}
+		catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+		
+		//Verify MusicID SignIn Text on Login Page		
+		try{
+			String Locator=locatorReader.getLocator("LoginPage.VerifySignInHeading");
+			this.WaitForElementVisible(Locator, 10);
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+		}
+		catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+		try{
+			String Locator=locatorReader.getLocator("LoginPage.VerifyMusicGroupID");
+			this.WaitForElementVisible(Locator, 10);
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+			String UserID="allprod@music-group.com";
+			this.sendKeys(Locator, UserID);
+						
+		}
+		catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+		try{
+			String Locator=locatorReader.getLocator("LoginPage.VerifyMusicGroupPassword");
+			this.WaitForElementVisible(Locator, 10);
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+			String Password="Welcome123";
+			this.sendKeys(Locator, Password);
+		}catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+		try{
+			String Locator=locatorReader.getLocator("LoginPage.VerifyLogInButton");
+			this.WaitForElementVisible(Locator, 10);
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+			this.clickOn(Locator);
+		}catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+		//Click On User
+		try{
+			
+			String Locator=locatorReader.getLocator("LoginPage.VerifyLoggedUser");
+			this.WaitForElementVisible(Locator, 10);
+			
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+			clickOn(Locator);
+		}catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+		//Click On Download List
+		
+try{
+			
+			String Locator=locatorReader.getLocator("LoginPage.ClickOnUploadList");
+			this.WaitForElementVisible(Locator, 10);
+			
+			Boolean Result=this.isElementPresent(Locator);
+			System.out.println("Result is"+Result);
+			String ActualResult=Result.toString();
+			Assert.assertEquals(ExpectedResult, ActualResult);
+			clickOn(Locator);
+		}catch(Exception e){
+			System.out.println("Product logo not found");
+			count = count +1;
+		}
+//Verify UploadCart
+try{
+	
+	String Locator=locatorReader.getLocator("LoginPage.VerifyUploadCart");
+	WaitForElementVisible(Locator, 10);
+	
+	Boolean Result=this.isElementPresent(Locator);
+	System.out.println("Result is"+Result);
+	String ActualResult=Result.toString();
+	Assert.assertEquals(ExpectedResult, ActualResult);
+	
+}catch(Exception e){
+	System.out.println("Product logo not found");
+	count = count +1;
+}
+
+////click on Choose file
+//try{
+//	
+//	String Locator=locatorReader.getLocator("LoginPage.ClickOnChooseFile");
+//	this.WaitForElementVisible(Locator, 10);
+//	
+//	Boolean Result=this.isElementPresent(Locator);
+//	System.out.println("Result is"+Result);
+//	String ActualResult=Result.toString();
+//	Assert.assertEquals(ExpectedResult, ActualResult);
+//	clickOn(Locator);
+//}catch(Exception e){
+//	System.out.println("Product logo not found");
+//	count = count +1;
+//}
+//Click On Upload List
+//try{
+	String Root_Path = System.getProperty("user.dir");
+	String Path=Root_Path+"\\product-list.csv";
+	System.out.println("Path"+Path);
+//	WaitForElementVisible("cartFile", 10);
+//	driver.findElement(ByLocator("cartFile")).clear();
+//	driver.findElement(ByLocator("cartFile")).sendKeys(Path);
+//	System.out.println("File is selected");
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("document.getElementById('cartFile').style.display = 'block';");
+	driver.findElement(ByLocator("cartFile")).sendKeys(Path);
+	js.executeScript("document.getElementById('cartFile').style.display = 'none';");
+	Assert.assertTrue(isElementPresent("//span[contains(.,'product-list.csv')]"));
+	System.out.println(getText("//span[contains(.,'product-list.csv')]"));
+	System.out.println("File is selected");
+//	StringSelection ss = new StringSelection(Path);
+//    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+//
+//    //imitate mouse events like ENTER, CTRL+C, CTRL+V
+//    Robot robot = new Robot();
+//   
+//   // robot.keyRelease(KeyEvent.VK_ENTER);
+//    robot.delay(1000);
+//    robot.keyPress(KeyEvent.VK_CONTROL);
+//    robot.keyPress(KeyEvent.VK_V);
+//    robot.delay(1000);
+//    robot.keyPress(KeyEvent.VK_ENTER);
+//    robot.keyRelease(KeyEvent.VK_V);
+//    robot.keyRelease(KeyEvent.VK_CONTROL);
+//    
+//  //  robot.keyPress(KeyEvent.VK_ENTER);
+//    robot.delay(1000);
+//    robot.keyRelease(KeyEvent.VK_ENTER);
+	  Thread.sleep(5000);
+//}catch(Exception e){
+	//System.out.println("File not uploaded");
+	//count = count +1;
+//}
+//Click on Upload Button
+//try{
+	System.out.println("Clicking on upload btn");
+	//String Locator2=locatorReader.getLocator("LoginPage.ClickOnUploadButton");
+	//WaitForElementVisible(Locator2, 10);
+	//((JavascriptExecutor) driver).executeScript("arguments[0].click();", Locator);
+	WebElement element = driver.findElement(ByLocator("//button[@value='Upload']"));
+	 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+//	
+//	Boolean Result=this.isElementPresent(Locator);
+//	System.out.println("Result is"+Result);
+//	String ActualResult=Result.toString();
+//	Assert.assertEquals(ExpectedResult, ActualResult);
+	//clickOn(Locator);
+	Thread.sleep(5000);
+	//Assert.assertTrue(driver.findElement(ByLocator("//form[@id='cartUploadForm']//div/img")).isDisplayed(), "Loading icon not displayed");
+	//Thread.sleep(4000);
+	//if(driver.findElement(ByLocator("//div[@id='uploadErrorMsg']")).isDisplayed())
+	if(isElementPresent("//div[@id='uploadErrorMsg']"))
+	{
+		String a= getText("//div[@id='uploadErrorMsg']");
+		System.out.println("error: " +a);
+		Assert.fail("File not uploaded");
+	}
+	
+//}catch(Exception e){
+	System.out.println("Failed to click on Upload button");
+	//count = count +1;
+//}
+
+//Click on Create Button
+
+	System.out.println("Click on Create button");
+	String Locator1=locatorReader.getLocator("LoginPage.ClickOnCreateButton");
+	WaitForElementVisible(Locator1, 10);
+	if(!driver.findElement(ByLocator(Locator1)).isDisplayed())
+	{Assert.fail("Create button is not present");}
+		
+	//Boolean Result=this.isElementPresent(Locator);
+	//System.out.println("Result is"+Result);
+	//String ActualResult=Result.toString();
+	//Assert.assertEquals(ExpectedResult, ActualResult);
+	clickOn(Locator1);
+
+
+//Click On Replace Button
+try{
+	
+	System.out.println("Click on Replace button");
+	String Locator=locatorReader.getLocator("LoginPage.ClickOnReplaceButton");
+	if(isElementPresent(Locator))
+	{
+	//	this.WaitForElementVisible(Locator, 10);
+//		Boolean Result=this.isElementPresent(Locator);
+//		System.out.println("Result is"+Result);
+//		String ActualResult=Result.toString();
+//		Assert.assertEquals(ExpectedResult, ActualResult);
+		clickOn(Locator);
+		Thread.sleep(3000);
+	}
+}catch(Exception e){
+	System.out.println("Failed to click on Replace button");
+	count = count +1;
+}
+
+
+//Verify Checkout Button
+try{
+	System.out.println("Click on Checkout button");
+	String Locator=locatorReader.getLocator("LoginPage.VerifyCheckOutButton");
+	WaitForElementVisible(Locator, 10);
+	Boolean Result=this.isElementPresent(Locator);
+	System.out.println("Result is"+Result);
+	String ActualResult=Result.toString();
+	Assert.assertEquals(ExpectedResult, ActualResult);
+	
+	
+}catch(Exception e){
+	System.out.println("Failed to find checkout button");
+	count = count +1;
+}
+	}
+	
+	public void VerifyCheckout(String B2BUser,String password,String ExpectedResult,String ReferenceID,String OrderType,String DeliveryMode,String DeliveryAdress) throws InterruptedException{
+	this.VerifyB2BLoginPage(B2BUser, password, ExpectedResult);
+	System.out.println("count value is :::" + count);
+	Assert.assertTrue(count==0);
+}
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-CrossTest">
+              <span class="suite-name border-failed">CrossTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CrossTest">
+                    <span>C:\Users\VireshT\Desktop\MusicGroup\SVN_Test\MusicGroup\config\CrossTest1.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-CrossTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-CrossTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-CrossTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-CrossTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CrossTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-CrossTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CrossTest" class="hide-methods failed suite-CrossTest"> (hide)</a> <!-- hide-methods failed suite-CrossTest -->
+                      <a href="#" panel-name="suite-CrossTest" class="show-methods failed suite-CrossTest"> (show)</a> <!-- show-methods failed suite-CrossTest -->
+                    </span>
+                    <div class="method-list-content failed suite-CrossTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996" hash-for-method="verifyMidas_OurStory1996Page">verifyMidas_OurStory1996Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002" hash-for-method="verifyMidas_OurStory2002Page">verifyMidas_OurStory2002Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CrossTest" class="hide-methods passed suite-CrossTest"> (hide)</a> <!-- hide-methods passed suite-CrossTest -->
+                      <a href="#" panel-name="suite-CrossTest" class="show-methods passed suite-CrossTest"> (show)</a> <!-- show-methods passed suite-CrossTest -->
+                    </span>
+                    <div class="method-list-content passed suite-CrossTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970" hash-for-method="verifyMidas_OurStory1970Page">verifyMidas_OurStory1970Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974" hash-for-method="verifyMidas_OurStory1974Page">verifyMidas_OurStory1974Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986" hash-for-method="verifyMidas_OurStory1986Page">verifyMidas_OurStory1986Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987" hash-for-method="verifyMidas_OurStory1987Page">verifyMidas_OurStory1987Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995" hash-for-method="verifyMidas_OurStory1990Page">verifyMidas_OurStory1990Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990" hash-for-method="verifyMidas_OurStory1990Page">verifyMidas_OurStory1990Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998" hash-for-method="verifyMidas_OurStory1998Page">verifyMidas_OurStory1998Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003" hash-for-method="verifyMidas_OurStory2003Page">verifyMidas_OurStory2003Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossTest" title="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004" hash-for-method="verifyMidas_OurStory2004Page">verifyMidas_OurStory2004Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CrossTest" class="panel CrossTest">
+          <div class="suite-CrossTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1996Page">
+                  </a> <!-- verifyMidas_OurStory1996Page -->
+                  <span class="method-name">verifyMidas_OurStory1996Page</span>
+                  <div class="stack-trace">java.lang.AssertionError: locator not found
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory1996_Helper.clickOurStory1970(Midas_OurStory1996_Helper.java:63)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory1996_Helper.ReachUptoOurStoryPage(Midas_OurStory1996_Helper.java:93)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory1996_Helper.verifyMidasOurStory1996Page(Midas_OurStory1996_Helper.java:102)
+	at test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996.verifyMidas_OurStory1996Page(Midas_OurStory1996.java:30)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-failed -->
+          <div class="suite-CrossTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory2002Page">
+                  </a> <!-- verifyMidas_OurStory2002Page -->
+                  <span class="method-name">verifyMidas_OurStory2002Page</span>
+                  <div class="stack-trace">java.lang.AssertionError: locator not found
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory2002_Helper.clickOurStory1970(Midas_OurStory2002_Helper.java:63)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory2002_Helper.ReachUptoOurStoryPage(Midas_OurStory2002_Helper.java:91)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory2002_Helper.verifyMidasOurStory2002Page(Midas_OurStory2002_Helper.java:100)
+	at test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002.verifyMidas_OurStory2002Page(Midas_OurStory2002.java:32)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-failed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory2003Page">
+                  </a> <!-- verifyMidas_OurStory2003Page -->
+                  <span class="method-name">verifyMidas_OurStory2003Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1970Page">
+                  </a> <!-- verifyMidas_OurStory1970Page -->
+                  <span class="method-name">verifyMidas_OurStory1970Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1990Page">
+                  </a> <!-- verifyMidas_OurStory1990Page -->
+                  <span class="method-name">verifyMidas_OurStory1990Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1986Page">
+                  </a> <!-- verifyMidas_OurStory1986Page -->
+                  <span class="method-name">verifyMidas_OurStory1986Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory2004Page">
+                  </a> <!-- verifyMidas_OurStory2004Page -->
+                  <span class="method-name">verifyMidas_OurStory2004Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1998Page">
+                  </a> <!-- verifyMidas_OurStory1998Page -->
+                  <span class="method-name">verifyMidas_OurStory1998Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1987Page">
+                  </a> <!-- verifyMidas_OurStory1987Page -->
+                  <span class="method-name">verifyMidas_OurStory1987Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1990Page">
+                  </a> <!-- verifyMidas_OurStory1990Page -->
+                  <span class="method-name">verifyMidas_OurStory1990Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+          <div class="suite-CrossTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMidas_OurStory1974Page">
+                  </a> <!-- verifyMidas_OurStory1974Page -->
+                  <span class="method-name">verifyMidas_OurStory1974Page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossTest-class-passed -->
+        </div> <!-- panel CrossTest -->
+        <div panel-name="test-xml-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\VireshT\Desktop\MusicGroup\SVN_Test\MusicGroup\config\CrossTest1.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;CrossTest&quot;&gt;
+  &lt;test name=&quot;CrossTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003&quot;/&gt;
+      &lt;class name=&quot;test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CrossTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CrossTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CrossTest (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CrossTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CrossTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CrossTest');
+function tableData_CrossTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyMidas_OurStory1986Page')
+data.setCell(0, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986')
+data.setCell(0, 3, 128940);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyMidas_OurStory1990Page')
+data.setCell(1, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995')
+data.setCell(1, 3, 114043);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyMidas_OurStory2004Page')
+data.setCell(2, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004')
+data.setCell(2, 3, 102016);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyMidas_OurStory2003Page')
+data.setCell(3, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003')
+data.setCell(3, 3, 66669);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyMidas_OurStory1987Page')
+data.setCell(4, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987')
+data.setCell(4, 3, 57312);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyMidas_OurStory1974Page')
+data.setCell(5, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974')
+data.setCell(5, 3, 53082);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyMidas_OurStory1970Page')
+data.setCell(6, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970')
+data.setCell(6, 3, 43677);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyMidas_OurStory1996Page')
+data.setCell(7, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996')
+data.setCell(7, 3, 41295);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyMidas_OurStory1990Page')
+data.setCell(8, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990')
+data.setCell(8, 3, 40601);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyMidas_OurStory2002Page')
+data.setCell(9, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002')
+data.setCell(9, 3, 37885);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyMidas_OurStory1998Page')
+data.setCell(10, 2, 'test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998')
+data.setCell(10, 3, 34197);
+window.suiteTableData['CrossTest']= { tableData: data, tableDiv: 'times-div-CrossTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-CrossTest">
+              </div> <!-- times-div-CrossTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CrossTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyMidas_OurStory2002Page</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'file://C:/Users/VireshT/Desktop/MusicGroup/SVN_Test/MusicGroup/screenshots/Midas_OurStoryPage1996//Midas_OurStoryPage19962016-04-28.jpg'target='_blank' >Midas_OurStoryPage19962016-04-28</a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyMidas_OurStory1996Page</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href= 'file://C:/Users/VireshT/Desktop/MusicGroup/SVN_Test/MusicGroup/screenshots/Midas_OurStoryPage1996//Midas_OurStoryPage19962016-04-28.jpg'target='_blank' >Midas_OurStoryPage19962016-04-28</a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CrossTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1970Page</span>
+                <span class="method-start">39011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82707 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">90236 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1974Page</span>
+                <span class="method-start">134251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">187333 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">188817 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1986Page</span>
+                <span class="method-start">222890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">351830 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">352825 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1987Page</span>
+                <span class="method-start">387537 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">444849 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">445821 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1990Page</span>
+                <span class="method-start">483577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">524178 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">525891 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1990Page</span>
+                <span class="method-start">555748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">669792 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">671495 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMidas_OurStory1996Page</span>
+                <span class="method-start">698483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">739838 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">740675 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory1998Page</span>
+                <span class="method-start">770944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">805141 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">805879 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMidas_OurStory2002Page</span>
+                <span class="method-start">843174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">881059 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">882202 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory2003Page</span>
+                <span class="method-start">914102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">980771 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">981383 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMidas_OurStory2004Page</span>
+                <span class="method-start">1009423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1111439 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

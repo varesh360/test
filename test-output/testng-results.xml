@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="11" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href= 'file://C:/Users/VireshT/Desktop/MusicGroup/SVN_Test/MusicGroup/screenshots/Midas_OurStoryPage1996//Midas_OurStoryPage19962016-04-28.jpg'target='_blank' >Midas_OurStoryPage19962016-04-28</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href= 'file://C:/Users/VireshT/Desktop/MusicGroup/SVN_Test/MusicGroup/screenshots/Midas_OurStoryPage1996//Midas_OurStoryPage19962016-04-28.jpg'target='_blank' >Midas_OurStoryPage19962016-04-28</a>]]>
+    </line>
+  </reporter-output>
+  <suite name="CrossTest" duration-ms="1112932" started-at="2016-04-28T07:39:20Z" finished-at="2016-04-28T07:57:53Z">
+    <groups>
+    </groups>
+    <test name="CrossTest" duration-ms="1112932" started-at="2016-04-28T07:39:20Z" finished-at="2016-04-28T07:57:53Z">
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990@ee9593]" name="setUp" is-config="true" duration-ms="37756" started-at="2016-04-28T13:16:45Z" finished-at="2016-04-28T13:17:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1990Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990@ee9593]" name="verifyMidas_OurStory1990Page" duration-ms="40601" started-at="2016-04-28T13:17:23Z" finished-at="2016-04-28T13:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1990Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990@ee9593]" name="tearDown" is-config="true" duration-ms="1713" started-at="2016-04-28T13:18:04Z" finished-at="2016-04-28T13:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1990 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004@d5c04e]" name="setUp" is-config="true" duration-ms="28040" started-at="2016-04-28T13:25:41Z" finished-at="2016-04-28T13:26:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory2004Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004@d5c04e]" name="verifyMidas_OurStory2004Page" duration-ms="102016" started-at="2016-04-28T13:26:09Z" finished-at="2016-04-28T13:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory2004Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004@d5c04e]" name="tearDown" is-config="true" duration-ms="1471" started-at="2016-04-28T13:27:51Z" finished-at="2016-04-28T13:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2004 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970@340fab]" name="setUp" is-config="true" duration-ms="39006" started-at="2016-04-28T13:09:20Z" finished-at="2016-04-28T13:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1970Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970@340fab]" name="verifyMidas_OurStory1970Page" duration-ms="43677" started-at="2016-04-28T13:09:59Z" finished-at="2016-04-28T13:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1970Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970@340fab]" name="tearDown" is-config="true" duration-ms="7527" started-at="2016-04-28T13:10:42Z" finished-at="2016-04-28T13:10:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003@a6d14e]" name="setUp" is-config="true" duration-ms="31900" started-at="2016-04-28T13:24:02Z" finished-at="2016-04-28T13:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory2003Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003@a6d14e]" name="verifyMidas_OurStory2003Page" duration-ms="66669" started-at="2016-04-28T13:24:34Z" finished-at="2016-04-28T13:25:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory2003Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003@a6d14e]" name="tearDown" is-config="true" duration-ms="612" started-at="2016-04-28T13:25:40Z" finished-at="2016-04-28T13:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2003 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002@864e92]" name="setUp" is-config="true" duration-ms="37295" started-at="2016-04-28T13:22:46Z" finished-at="2016-04-28T13:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyMidas_OurStory2002Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002@864e92]" name="verifyMidas_OurStory2002Page" duration-ms="37885" started-at="2016-04-28T13:23:23Z" finished-at="2016-04-28T13:24:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[locator not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: locator not found
+	at org.testng.Assert.fail(Assert.java:94)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory2002_Helper.clickOurStory1970(Midas_OurStory2002_Helper.java:63)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory2002_Helper.ReachUptoOurStoryPage(Midas_OurStory2002_Helper.java:91)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory2002_Helper.verifyMidasOurStory2002Page(Midas_OurStory2002_Helper.java:100)
+	at test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002.verifyMidas_OurStory2002Page(Midas_OurStory2002.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'file://C:/Users/VireshT/Desktop/MusicGroup/SVN_Test/MusicGroup/screenshots/Midas_OurStoryPage1996//Midas_OurStoryPage19962016-04-28.jpg'target='_blank' >Midas_OurStoryPage19962016-04-28</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory2002Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002@864e92]" name="tearDown" is-config="true" duration-ms="1143" started-at="2016-04-28T13:24:01Z" finished-at="2016-04-28T13:24:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2002 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987@b39c39]" name="setUp" is-config="true" duration-ms="34712" started-at="2016-04-28T13:15:12Z" finished-at="2016-04-28T13:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1987Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987@b39c39]" name="verifyMidas_OurStory1987Page" duration-ms="57312" started-at="2016-04-28T13:15:47Z" finished-at="2016-04-28T13:16:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1987Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987@b39c39]" name="tearDown" is-config="true" duration-ms="972" started-at="2016-04-28T13:16:44Z" finished-at="2016-04-28T13:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1987 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998@1e0f4f]" name="setUp" is-config="true" duration-ms="30269" started-at="2016-04-28T13:21:40Z" finished-at="2016-04-28T13:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1998Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998@1e0f4f]" name="verifyMidas_OurStory1998Page" duration-ms="34197" started-at="2016-04-28T13:22:11Z" finished-at="2016-04-28T13:22:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1998Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998@1e0f4f]" name="tearDown" is-config="true" duration-ms="737" started-at="2016-04-28T13:22:45Z" finished-at="2016-04-28T13:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986@180d80f]" name="setUp" is-config="true" duration-ms="34073" started-at="2016-04-28T13:12:28Z" finished-at="2016-04-28T13:13:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1986Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986@180d80f]" name="verifyMidas_OurStory1986Page" duration-ms="128940" started-at="2016-04-28T13:13:03Z" finished-at="2016-04-28T13:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1986Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986@180d80f]" name="tearDown" is-config="true" duration-ms="995" started-at="2016-04-28T13:15:11Z" finished-at="2016-04-28T13:15:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1986 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996@6a03af]" name="setUp" is-config="true" duration-ms="26988" started-at="2016-04-28T13:20:31Z" finished-at="2016-04-28T13:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyMidas_OurStory1996Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996@6a03af]" name="verifyMidas_OurStory1996Page" duration-ms="41295" started-at="2016-04-28T13:20:58Z" finished-at="2016-04-28T13:21:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[locator not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: locator not found
+	at org.testng.Assert.fail(Assert.java:94)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory1996_Helper.clickOurStory1970(Midas_OurStory1996_Helper.java:63)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory1996_Helper.ReachUptoOurStoryPage(Midas_OurStory1996_Helper.java:93)
+	at test.java.com.MusicGroup.pagehelper.Midas_OurStory1996_Helper.verifyMidasOurStory1996Page(Midas_OurStory1996_Helper.java:102)
+	at test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996.verifyMidas_OurStory1996Page(Midas_OurStory1996.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'file://C:/Users/VireshT/Desktop/MusicGroup/SVN_Test/MusicGroup/screenshots/Midas_OurStoryPage1996//Midas_OurStoryPage19962016-04-28.jpg'target='_blank' >Midas_OurStoryPage19962016-04-28</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1996Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996@6a03af]" name="tearDown" is-config="true" duration-ms="837" started-at="2016-04-28T13:21:39Z" finished-at="2016-04-28T13:21:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1996 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974@afb23c]" name="setUp" is-config="true" duration-ms="44015" started-at="2016-04-28T13:10:50Z" finished-at="2016-04-28T13:11:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1974Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974@afb23c]" name="verifyMidas_OurStory1974Page" duration-ms="53082" started-at="2016-04-28T13:11:34Z" finished-at="2016-04-28T13:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1974Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974@afb23c]" name="tearDown" is-config="true" duration-ms="1484" started-at="2016-04-28T13:12:27Z" finished-at="2016-04-28T13:12:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974 -->
+      <class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995@107ec20]" name="setUp" is-config="true" duration-ms="29857" started-at="2016-04-28T13:18:06Z" finished-at="2016-04-28T13:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMidas_OurStory1990Page()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995@107ec20]" name="verifyMidas_OurStory1990Page" duration-ms="114043" started-at="2016-04-28T13:18:35Z" finished-at="2016-04-28T13:20:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMidas_OurStory1990Page -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995@107ec20]" name="tearDown" is-config="true" duration-ms="1703" started-at="2016-04-28T13:20:29Z" finished-at="2016-04-28T13:20:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1995 -->
+    </test> <!-- CrossTest -->
+  </suite> <!-- CrossTest -->
+</testng-results>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locators>
+   <LoginPage>
+   <VerifyLogoOnLogin><![CDATA[//div[@class='yCmsComponent siteLogo']/a[@class='logo-holder']/img[@src='//assets.music-group.com/images/logo/TypeA/MUSICGROUP.png']]]></VerifyLogoOnLogin>
+   <VerifySignInHeading><![CDATA[//h2[contains(text(),'MUSIC ID Sign In')]]]></VerifySignInHeading>
+   <VerifyMusicGroupID><![CDATA[//div[@class='control-group']/div[@class='form_field-input']/input[@id='j_username']]]></VerifyMusicGroupID>
+   <VerifyMusicGroupPassword><![CDATA[//div[@class='control-group']/div[@class='form_field-input']/input[@id='j_password']]]></VerifyMusicGroupPassword>
+   <VerifyLogInButton><![CDATA[//span[@class='pull-right']/button[contains(text(), 'Sign In')]]]></VerifyLogInButton>
+   <VerifyLoggedUser><![CDATA[//div[@class='headerContent ']/ul/li[contains(text(), 'Welcome, MG_PARTNER')]]]></VerifyLoggedUser>
+   <ClickOnUploadList><![CDATA[//li[@class='logged_in']/ul/li[3]/a[contains(text(), 'Upload Order List')]]]></ClickOnUploadList>
+   <VerifyUploadCart><![CDATA[//h1[contains(text(), 'Upload Cart')]]]></VerifyUploadCart>
+   <ClickOnChooseFile><![CDATA[//label[@class='btn']]]></ClickOnChooseFile>
+   <ClickOnUploadButton><![CDATA[//button[contains(text(), 'Upload')]]]></ClickOnUploadButton>
+   <ClickOnCreateButton><![CDATA[//button[contains(text(), 'Create')]]]></ClickOnCreateButton>
+   <ClickOnReplaceButton><![CDATA[//button[contains(text(), 'Replace cart')]]]></ClickOnReplaceButton>
+   <VerifyCheckOutButton><![CDATA[//button[contains(text(), 'Check Out')]]]></VerifyCheckOutButton>
+   </LoginPage>
+   </Locators>

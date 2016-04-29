@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locators>
+<VerifyHomePageMenu>
+<VerifyLogoOnLogin><![CDATA[//div[@class='yCmsComponent siteLogo']/a[@class='logo-holder']/img[@src='//prep-media.music-group.com/media/sys_master/hc1/hd8/8830401511454.png']]]></VerifyLogoOnLogin>
+<VerifyHeaderMenu1><![CDATA[//li[@class='dropdown']/a[contains(text(), 'Solutions')]]]> </VerifyHeaderMenu1>
+<VerifyHeaderMenu2><![CDATA[//li/a[contains(text(), 'Brands')]]]> </VerifyHeaderMenu2>
+<VerifyHeaderMenu3><![CDATA[//li/a[contains(text(), 'Community')]]]> </VerifyHeaderMenu3>
+<VerifyHeaderMenu4><![CDATA[//li/a[contains(text(), 'Join Us')]]]> </VerifyHeaderMenu4>
+</VerifyHomePageMenu>
+
+<VerifySolutionsMenu>
+<VerifyEnterPriseandEnterainment><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/h5/a[contains(text(), ' Enterprise and Entertainment')]]]></VerifyEnterPriseandEnterainment>
+<VerifyInstall><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), ' Install')]]]></VerifyInstall>
+<VerifyCorporate><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][2]/a[contains(text(), ' Corporate')]]]></VerifyCorporate>
+<VerifyLargerVenue><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][3]/a[contains(text(), ' Large Venue')]]]></VerifyLargerVenue>
+<VerifyGovernment><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), ' Government')]]]></VerifyGovernment>
+<VerifyEducation><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), '  Education')]]]></VerifyEducation>
+<VerifyHospitalityandRetail><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), '   Hospitality & Retail')]]]></VerifyHospitalityandRetail>
+<VerifyHotelandCasino><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), 'Hotel & Casino')]]]></VerifyHotelandCasino>
+<VerifyTransportation><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), '   Trasportation')]]]></VerifyTransportation>
+<VerifyCinema><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), 'Cinema')]]]></VerifyCinema>
+<VerifyWorship><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), ' Worship')]]]></VerifyWorship>
+
+<VerifyLive><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Live')]]]></VerifyLive>
+<verifyTouring><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Touring')]]]></verifyTouring>
+<VerifyPortable><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Portable')]]]></VerifyPortable>
+<VerifyCreation><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/h5/a[contains(text(), ' Creation')]]]></VerifyCreation>
+<VerifyMusicalInstrument><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), ' Musical Instrument')]]]></VerifyMusicalInstrument>
+<VerifyVocals><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][2]/a[contains(text(), ' Vocals')]]]></VerifyVocals>
+<VerifyGuitar><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][3]/a[contains(text(), ' Guitar')]]]></VerifyGuitar>
+<VerifyBass><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), ' Bass')]]]></VerifyBass>
+<VerifyKeyandDrums><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][4]/a[contains(text(), ' Bass')]]]></VerifyKeyandDrums>
+<VerifyProduction><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), ' Production')]]]></VerifyProduction>
+<VerifyRecord_Production><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children'][2]/a[contains(text(), ' Recording/Production')]]]></VerifyRecord_Production>
+<VerifyElectronicDanceMusic><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), ' Electronic Dance Music')]]]></VerifyElectronicDanceMusic>
+<VerifyMobile><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Mobile')]]]></VerifyMobile>
+<VerifyAudioForVideo><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Audio for Video')]]]></VerifyAudioForVideo>
+<VerifyLifeStyleandHome><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/h5/a[contains(text(), 'Lifestyle and Home')]]]></VerifyLifeStyleandHome>
+<VerifyHomeTheatre><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Home Theatre')]]]></VerifyHomeTheatre>
+<VerifyPortableAudio><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Portable Audio')]]]></VerifyPortableAudio>
+<VerifyHomeInstall><![CDATA[//li[@class='dropdown open']/div[@class='dropdown-menu pull-right solution-dropdown']/div[@class='col-xs-4']/ul[@class='subnodes']/li[@class='children']/a[contains(text(), 'Home Install')]]]></VerifyHomeInstall>
+</VerifySolutionsMenu>
+<VerifyImageOnHomePage>
+<VerifyMainImage><![CDATA[//div[@class='carousel-inner']]]></VerifyMainImage>
+</VerifyImageOnHomePage>
+</Locators>

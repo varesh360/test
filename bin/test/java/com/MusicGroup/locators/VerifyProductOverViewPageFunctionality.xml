@@ -1,0 +1,8 @@
+<Locators>
+    <ProductOverViewPage>
+         <SerachField><![CDATA[//input[@id='search']]]></SerachField>
+         <ClickLearnMore><![CDATA[//a[@class='learn-more']]]></ClickLearnMore>
+         <ClickLearnMoreonProductOverview><![CDATA[//a[contains(text(),"Learn more…")]]]></ClickLearnMoreonProductOverview>
+<textbeforelearmore><![CDATA[//a[contains(text(),"Learn more…")]/../p]]></textbeforelearmore>
+    </ProductOverViewPage>
+    </Locators>

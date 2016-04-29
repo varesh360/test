@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="CrossTest"
+	annotations="JDK">
+	<test name="CrossTest" junit="false"
+		preserve-order="true">
+		<classes>
+		
+			
+				<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1970" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1974" />
+						<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory1998" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2006" />
+					<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2008" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Midas_OurStory2009" />
+			
+			
+		</classes>		
+	</test>
+</suite> 
