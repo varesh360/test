@@ -123,19 +123,14 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 			String margin_top = this.getCSS(locator, "margin-bottom");
 			String line_height = this.getCSS(locator, "line-height");
 			String font_size = this.getCSS(locator, "font-size");
-			
-			
+
 			// Substring: To remove pixel(px text) from value
 			String margin_top_wopx = margin_top.substring(0, 2);
 			String line_height_wopx = line_height.substring(0, 2);
 			String font_size_wopx = font_size.substring(0, 2);
-			
-			
-		
 						
 			int getsubpixel=Integer.parseInt(font_size_wopx)- Integer.parseInt(line_height_wopx);
-			
-				
+	
 			String locator1 = locatorReader.getLocator("VerifyPixels.textSpace8Height");
 			String line_height1 = this.getCSS(locator1, "line-height");
 			String font_size1 = this.getCSS(locator1, "font-size");
@@ -145,9 +140,7 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 			String font_size_wopx1 = font_size1.substring(0, 2);
 			
 			int getsubpixel1=Integer.parseInt(font_size_wopx1)- Integer.parseInt(line_height_wopx1);
-			
-			
-			
+
 			int Totaladdedpixel = Integer.parseInt(margin_top_wopx)+ getsubpixel1-getsubpixel+Integer.parseInt("4");
 			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
 			System.out.println("Actual result" + Totalpixelvaluewithpixel);
@@ -168,15 +161,12 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 			String margin_top = this.getCSS(locator, "margin-bottom");
 			String line_height = this.getCSS(locator, "line-height");
 			String font_size = this.getCSS(locator, "font-size");
-			
-			
+
 			// Substring: To remove pixel(px text) from value
 			String margin_top_wopx = margin_top.substring(0, 2);
 			String line_height_wopx = line_height.substring(0, 2);
 			String font_size_wopx = font_size.substring(0, 2);
-			
-		
-						
+	
 			int getsubpixel=Integer.parseInt(font_size_wopx)- Integer.parseInt(line_height_wopx);
 						
 			String locator1 = locatorReader.getLocator("VerifyPixels.textSpace6Height");
@@ -241,12 +231,12 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 
 			// Substring: To remove pixel(px text) from value
 			String margin_bottom_wopx = margin_bottom.substring(0, 2);
-		   int getsubpixel = Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx) - Integer.parseInt("4");
+			int getsubpixel = Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx) - Integer.parseInt("4");
 			String locator1 = locatorReader	.getLocator("VerifyPixels.vSpace4Heightaboveimage");
 			String margin_top = this.getCSS(locator1, "margin-top");
 			String margin_top_wopx = margin_top.substring(0, 2);
 			
-		int Totaladdedpixel = Integer.parseInt(margin_bottom_wopx)+Integer.parseInt(margin_top_wopx)+getsubpixel;
+			int Totaladdedpixel = Integer.parseInt(margin_bottom_wopx)+Integer.parseInt(margin_top_wopx)+getsubpixel;
 							
 			String Totalpixelvaluewithpixel = Totaladdedpixel + "px";
 			System.out.println("Actual result" + Totalpixelvaluewithpixel);
@@ -346,26 +336,17 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 		}
 		// Verify TextSpace1Height has the height of 35px.
 		try {
-			String locator = locatorReader.getLocator("VerifyPixels.vSpace2Height");
-						
-					
+			
+			String locator = locatorReader.getLocator("VerifyPixels.vSpace2Height");			
 			String line_height = this.getCSS(locator, "line-height");
-			String font_size = this.getCSS(locator, "font-size");
-			
+			String font_size = this.getCSS(locator, "font-size");		
 			String line_height_wopx = line_height.substring(0, 2);
-			String font_size_wopx = font_size.substring(0, 2);
-			
-						
+			String font_size_wopx = font_size.substring(0, 2);			
 			int getsubpixel = Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx)-Integer.parseInt("3");
-			
-			
 			String locator1 = locatorReader.getLocator("VerifyPixels.TextSpace1Height");
 			String padding_bottom = this.getCSS(locator1, "padding-bottom");
-			
 			String line_height1 = this.getCSS(locator1, "line-height");
 			String font_size1 = this.getCSS(locator1, "font-size");
-			
-			
 			String line_height_wopx1 = line_height1.substring(0, 2);
 			String font_size_wopx1 = font_size1.substring(0, 2);
 			String padding_bottom_wopx1 = padding_bottom.substring(0, 2);
@@ -373,8 +354,6 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 			// Substring: To remove pixel(px text) from value
 			
 			int getsubpixel1 = Integer.parseInt(line_height_wopx1)- Integer.parseInt(font_size_wopx1) ;
-			
-			
 			int getfinalvaluewopx=Integer.parseInt(padding_bottom_wopx1)+getsubpixel+getsubpixel1+Integer.parseInt("2");
 			String Totalpixelvaluewithpixel = getfinalvaluewopx + "px";
 			System.out.println("Actual result" + Totalpixelvaluewithpixel);
@@ -398,21 +377,13 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 			String font_size = this.getCSS(locator, "font-size");
 			
 			String line_height_wopx = line_height.substring(0, 2);
-			String font_size_wopx = font_size.substring(0, 2);
-			
-						
+			String font_size_wopx = font_size.substring(0, 2);		
 			int getsubpixel = Integer.parseInt(line_height_wopx)- Integer.parseInt(font_size_wopx)-Integer.parseInt("2");
-						
-		
-			
-			
 			String locator1 = locatorReader.getLocator("VerifyPixels.vSpace1heightaboveawardtext");
 			String margin_top = this.getCSS(locator1, "margin-top");
 			String margin_top_wopx = margin_top.substring(0, 2);
 			
 			// Substring: To remove pixel(px text) from value
-			
-			
 			int getfinalvaluewopx=Integer.parseInt(padding_bottom_wopx)+Integer.parseInt(margin_top_wopx)+getsubpixel;
 			String Totalpixelvaluewithpixel = getfinalvaluewopx + "px";
 			System.out.println("Actual result" + Totalpixelvaluewithpixel);
@@ -431,8 +402,7 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 		try {
 			String locator1 = locatorReader.getLocator("VerifyPixels.vSpace1heightaboveawardtext");
 			String margin_top = this.getCSS(locator1, "margin-bottom");
-					
-					
+	
 			System.out.println("Actual result" + margin_top);
 			Assert.assertEquals(vSpace4Height, margin_top);
 			
@@ -476,21 +446,14 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 			String locator = locatorReader.getLocator("VerifyPixels.vSpace1heightfooter");
 			String margin_top = this.getCSS(locator, "margin-top");							
 			String margin_top_wopx = margin_top.substring(0, 2);		
-						
-		
-			
-			
 			String locator1 = locatorReader.getLocator("VerifyPixels.vSpace2Heightabovebuttontext");
 			String line_height = this.getCSS(locator1, "line-height");
 			String font_size = this.getCSS(locator1, "font-size");
 					
 			String line_height_wopx = line_height.substring(0, 2);
 			String font_size_wopx = font_size.substring(0, 2);
-			
-			
+
 			// Substring: To remove pixel(px text) from value
-			
-			
 			int getfinalvaluewopx=Integer.parseInt(margin_top_wopx)+Integer.parseInt(line_height_wopx)-Integer.parseInt(font_size_wopx)-Integer.parseInt("4");
 			String Totalpixelvaluewithpixel = getfinalvaluewopx + "px";
 			System.out.println("Actual result" + Totalpixelvaluewithpixel);
@@ -509,8 +472,7 @@ public class Midas_OurStory1971_Helper extends DriverHelper
 		try {
 			String locator1 = locatorReader.getLocator("VerifyPixels.vSpace1heightfooter");
 			String margin_top = this.getCSS(locator1, "margin-bottom");
-					
-					
+	
 			System.out.println("Actual result" + margin_top);
 			Assert.assertEquals(vSpace1Height, margin_top);
 			

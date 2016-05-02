@@ -558,5 +558,10 @@
 									<xmlfileset dir="config" includes="FullTest.xml" />
 									</testng>
 								</target>
+									<target name="CrossTest5" depends="compile">
+										<testng classpathref="test.classpath" suitename="" haltonfailure="true">
+										<xmlfileset dir="config" includes="CrossTest5.xml" />
+										</testng>
+									</target>
 							
 </project>

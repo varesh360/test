@@ -1,0 +1,154 @@
+
+*****************************************************************************
+May 02,2016 08:49:32 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1973 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:49:53 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:50:15 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1975 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:50:38 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:51:11 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1978 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:51:40 [info]  May 02,2016 08:51:40 [info]  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Error message >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//ul[@id='mTS_1_container']//li[5]/a"}
+Command duration or timeout: 10.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'VireshT-PC', ip: '192.168.8.62', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1d012f9b-7a16-4494-b3bc-dbaa3b8dbd31
+*** Element info: {Using=xpath, value=//ul[@id='mTS_1_container']//li[5]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at test.java.com.MusicGroup.pagehelper.KlarkTeknik_OurStory1978_Helper.clickOurStory1970(KlarkTeknik_OurStory1978_Helper.java:49)
+	at test.java.com.MusicGroup.pagehelper.KlarkTeknik_OurStory1978_Helper.ReachUptoOurStoryPage(KlarkTeknik_OurStory1978_Helper.java:76)
+	at test.java.com.MusicGroup.pagehelper.KlarkTeknik_OurStory1978_Helper.verifyMidasOurStory1971Page(KlarkTeknik_OurStory1978_Helper.java:85)
+	at test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1978.verifyMidas_OurStory1971Page(KlarkTeknik_OurStory1978.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//ul[@id='mTS_1_container']//li[5]/a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'VireshT-PC', ip: '192.168.8.62', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/VireshT/AppData/Local/Temp/anonymous5424306113410929852webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/VireshT/AppData/Local/Temp/anonymous5424306113410929852webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+*****************************************************************************
+May 02,2016 08:52:02 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1980 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:52:22 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:52:57 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1984 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:53:43 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:54:02 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1986 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:54:24 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:54:42 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1987 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:55:00 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:55:32 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1990 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:56:17 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:56:35 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.klarkTeknik_OurStory1993 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:56:59 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:57:28 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1996 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:58:27 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:58:45 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1982 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:59:07 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 08:59:26 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.klarkTeknik_OurStory2001 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 08:59:48 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:00:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2000 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 09:00:32 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:00:50 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2003 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 09:01:12 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:01:40 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2005 and Test method verifyMidas_OurStory1971Page
+*****************************************************************************
+May 02,2016 09:02:32 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:03:02 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2009 and Test method verifyMidas_OurStory2009Page
+*****************************************************************************
+May 02,2016 09:03:47 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:04:06 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2011 and Test method verifyMidas_OurStory2011Page
+*****************************************************************************
+May 02,2016 09:04:32 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:04:52 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2014 and Test method verifyMidas_OurStory2011Page
+*****************************************************************************
+May 02,2016 09:05:18 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:05:49 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1970 and Test method verifyMidas_OurStory2003Page
+*****************************************************************************
+May 02,2016 09:06:20 [info]  Midas Training page verified successfully.
+
+*****************************************************************************
+May 02,2016 09:07:19 [info]   Execution Started of Test Class test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1973 and Test method verifyMidas_OurStory2003Page
+*****************************************************************************

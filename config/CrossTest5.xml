@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="5" verbose="1" name="CrossTest5"
+	annotations="JDK">
+	<test name="CrossTest5" junit="false"
+		preserve-order="true">
+		<classes>
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1973" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1975" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1978" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1980" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1984" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1986" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1987" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1990" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.klarkTeknik_OurStory1993" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1996" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory1982" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.klarkTeknik_OurStory2001" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2000" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2003" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2005" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2009" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2011" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.KlarkTeknik_OurStory2014" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1970" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1973" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1978" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1980" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1982" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.TurboSound_OurStory1986" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1961" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1977" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1988" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Berhringer_OurStory1990" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1991" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1992" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1991" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory1992" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2014" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2013" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2012" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2011" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2010" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2009" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Behringer_OurStory2007" />
+			<class name="test.java.com.MusicGroup.scripts.UnifiedTestCases.Bugera_OurStory" />
+		</classes>		
+	</test>
+</suite> 

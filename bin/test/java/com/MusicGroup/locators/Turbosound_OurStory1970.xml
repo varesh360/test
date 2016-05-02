@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Locators>
     <OurStory>
-     <ClickToggleMenu><![CDATA[//i[@class='icon-menu icon-menu-login']]]></ClickToggleMenu>
-       <ClickMidasBrand><![CDATA[//a[@class='brand-turbosound']]]></ClickMidasBrand>
+       <ClickToggleMenu><![CDATA[//i[@class='icon-menu icon-menu-login']]]></ClickToggleMenu>
+       <ClickMidasBrand><![CDATA[//a[@href='/brand/turbosound/home']]]></ClickMidasBrand>
        <ClickOurStoryMenu><![CDATA[//a[contains(text(),'Our Story')]]]></ClickOurStoryMenu>
-       <ClickOurStory1981image><![CDATA[//li[@class='img-seperate-block col-md-2 mTSThumbContainer'][4]]]></ClickOurStory1981image>
-         <ClickOurStory1998image><![CDATA[//li[@class='img-seperate-block col-md-2 mTSThumbContainer'][16]/a]]></ClickOurStory1998image>
-      </OurStory>  
+       <ClickOurStory1981image><![CDATA[//ul[@id='mTS_1_container']/li[@class='img-seperate-block col-md-2 mTSThumbContainer']/a]]></ClickOurStory1981image>
+         <ClickOurStory1998image><![CDATA[//li[@class='img-seperate-block col-md-2 mTSThumbContainer'][12]/a]]></ClickOurStory1998image>
+    </OurStory>  
     <VerifyPixels>
-       <vSpace1Height><![CDATA[//div[@class='leftText']/h3]]></vSpace1Height>
+       <vSpace1Height><![CDATA[//h3[contains(text(),"1970")]]]></vSpace1Height>
        <textSpace8Height><![CDATA[//div[@class='leftText']/h2]]></textSpace8Height>
        <textSpace6Height><![CDATA[//div[@class='leftText']/p]]></textSpace6Height>
        <textSpace6Height1><![CDATA[//div[@class='our-story-intro-text']/p]]></textSpace6Height1>  
@@ -20,8 +20,8 @@
        <FixedImageWidth33><![CDATA[//div[@class='box-image-col-xs-6']/img]]></FixedImageWidth33>
        <FixedImagewidth6><![CDATA[//div[@class='col-xs-6'][2]/div[@class='box-image-col-xs-6']/img]]></FixedImagewidth6>
        <vSpace1HeightabovebelowFirstImage><![CDATA[//div[@class='ourstory-bottom-paragraph-details']]]></vSpace1HeightabovebelowFirstImage>
-       <vSpace1HeightBelowFirstImagetext><![CDATA[//div[@class='ourstory-bottom-paragraph-details']/div[@class='leftText']/p]]></vSpace1HeightBelowFirstImagetext>
-       <vSpace1HeightBelowFirstImagetext22><![CDATA[//div[@class='ourstory-bottom-paragraph-details']/div[@class='leftText']/p[2]]]></vSpace1HeightBelowFirstImagetext22>
+       <vSpace1HeightBelowFirstImagetext><![CDATA[//div[@class='ourstory-bottom-paragraph-details']/p]]></vSpace1HeightBelowFirstImagetext>
+       <vSpace1HeightBelowFirstImagetext22><![CDATA[//div[@class='ourstory-bottom-paragraph-details']/p[2]]]></vSpace1HeightBelowFirstImagetext22>
        <FirstImagewidth><![CDATA[//div[@class='col-xs-12 no-gutter']/img]]></FirstImagewidth>
        <vSpace2Height><![CDATA[//div[@class='page-MidasOD-1971 ourstory-bottom-paragraph-details em-class']]]></vSpace2Height>
        <vSpace2Height1><![CDATA[//div[@class='text-align']/p]]></vSpace2Height1>
@@ -45,6 +45,6 @@
        <Gutter2Width1><![CDATA[//div[@class='col-xs-6'][2]//div[@class='callout-box-image call-out-margin']]]></Gutter2Width1>
        <calloutbodycopy><![CDATA[//div[@class='col-xs-6'][1]//div[@class='callout-box-cont']]]></calloutbodycopy>
        <calloutbodyfiximage><![CDATA[//div[@class='col-xs-6'][2]//div[@class='vertical-center']/img]]></calloutbodyfiximage>
-       <vSpaceHeightaboveseemidasbutton><![CDATA[//p[starts-with(text(),'The team went back')]]]></vSpaceHeightaboveseemidasbutton>
+       <vSpaceHeightaboveseemidasbutton><![CDATA[//p[starts-with(text(),'Sound reinforcement designers')]]]></vSpaceHeightaboveseemidasbutton>
     </VerifyPixels> 
 </Locators>

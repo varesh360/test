@@ -31,6 +31,7 @@ import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.WebDriverWait;
 */
+import test.java.com.MusicGroup.pagehelper.*;
 import test.java.com.MusicGroup.pagehelper.B2B_Home_Helper;
 import test.java.com.MusicGroup.pagehelper.B2B_Login_Helper;
 import test.java.com.MusicGroup.pagehelper.Brands_Product_Downloads_Helper;
@@ -210,6 +211,46 @@ public abstract class DriverTestCase {
 	public UnifiedSupport_Brands_Helper UnifiedGlobalSupport_Helper;
 
 	public VerifyB2BCheckoutPage_Helper Checkout_Helper;
+public KlarkTeknik_OurStory1973_Helper KlarkTeknik_OURStory1973_Helper;
+	public KlarkTeknik_OurStory1975_Helper KlarkTeknik_OURStory1975_Helper;
+	public KlarkTeknik_OurStory1978_Helper KlarkTeknik_OURStory1978_Helper;
+	public KlarkTeknik_OurStory1980_Helper KlarkTeknik_OURStory1980_Helper;
+	public KlarkTeknik_OurStory1982_Helper KlarkTeknik_OURStory1982_Helper;
+	public KlarkTeknik_OurStory1984_Helper KlarkTeknik_OURStory1984_Helper;
+	public KlarkTeknik_OurStory1986_Helper KlarkTeknik_OURStory1986_Helper;
+	public KlarkTeknik_OurStory1987_Helper KlarkTeknik_OURStory1987_Helper;
+	public KlarkTeknik_OurStory1990_Helper KlarkTeknik_OURStory1990_Helper;
+	public klarkTeknik_OurStory1993_Helper KlarkTeknik_OURStory1993_Helper;
+	public KlarkTeknik_OurStory1996_Helper KlarkTeknik_OURStory1996_Helper;
+	public KlarkTeknik_OurStory2000_Helper KlarkTeknik_OURStory2000_Helper;
+	public KlarkTeknik_OurStory2001_Helper KlarkTeknik_OURStory2001_Helper;
+	public KlarkTeknik_OurStory2003_Helper KlarkTeknik_OURStory2003_Helper;
+	public KlarkTeknik_OurStory2005_Helper KlarkTeknik_OURStory2005_Helper;
+	public KlarkTeknik_OurStory2009_Helper KlarkTeknik_OURStory2009_Helper;
+	public KlarkTeknik_OurStory2011_Helper KlarkTeknik_OURStory2011_Helper;
+	public KlarkTeknik_OurStory2014_Helper KlarkTeknik_OURStory2014_Helper;
+	public TurboSound_OurStory1970_Helper TS_OurStory1970_Helper; 
+	public TurboSound_OurStory1973_Helper TS_OurStory1973_Helper;
+	public TurboSound_OurStory1978_Helper TS_OurStory1978_Helper;
+	public TurboSound_OurStory1980_Helper TS_OurStory1980_Helper;
+	public TurboSound_OurStory1982_Helper TS_OurStory1982_Helper;
+	public TurboSound_OurStory1986_Helper TS_OurStory1986_Helper;
+	
+	
+	public Behringer_OurStory1961_Helper Behringer_OURStory1961_Helper;
+	public Behringer_OurStory1977_Helper Behringer_OURStory1977_Helper;
+	public Behringer_OurStory1988_Helper Behringer_OURStory1988_Helper;
+	public Behringer_OurStory1990_Helper Behringer_OURStory1990_Helper;
+	public Behringer_OurStory1991_Helper Behringer_OURStory1991_Helper;
+	public Behringer_OurStory1992_Helper Behringer_OURStory1992_Helper;
+	public Behringer_OurStory2014_Helper Behringer_OURStory2014_Helper;
+	public Behinger_OurStory2013_Helper Behringer_OURStory2013_Helper;
+	public Behringer_OurStory2012_Helper Behringer_OURStory2012_Helper;
+	public Behringer_OurStory2011_Helper Behringer_OURStory2011_Helper;
+	public Behringer_OurStory2010_Helper Behringer_OURStory2010_Helper;
+	public Behringer_OurStory2009_Helper Behringer_OURStory2009_Helper;
+	public Behringer_OurStory2007_Helper Behringer_OURStory2007_Helper;
+	public Bugera_OurStory_Helper Bugera_OURSTORY_Helper;
 
 
 	//Initialize objects
